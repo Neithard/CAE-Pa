@@ -1,0 +1,97 @@
+<http://www.tu-dresden.de/ifa/LinkData/revision1>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Erste Änderung bzg.."^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://purl.org/dc/terms/identifier>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/erstellt>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-16T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/tobias>
+                ] ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/freigegeben>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-18T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/tobias>
+                ] ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/geprueft>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-17T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/sascha>
+                ] .
+
+<http://www.tu-dresden.de/ifa/LinkData/siemens>
+        <http://www.w3.org/2001/vcard-rdf/3.0#MAILER>
+                "siemens@fake.server"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#N>
+                "Siemens"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#PHOTO>
+                "12345678"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://www.tu-dresden.de/ifa/LinkData/tobias>
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "Tobias Steege"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#N>
+                [ <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                          "Steege"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2001/vcard-rdf/3.0#NAME>
+                          "Tobias"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#PHOTO>
+                "C:/istderschön.png"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.tu-dresden.de/ifa/LinkData/revision2>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Zweite Änderung bzg.."^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://purl.org/dc/terms/identifier>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/erstellt>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-16T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/tobias>
+                ] ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/freigegeben>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-18T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/tobias>
+                ] ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/geprueft>
+                [ <http://purl.org/dc/terms/created>
+                          "2013-06-17T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                  <http://purl.org/dc/terms/creator>
+                          <http://www.tu-dresden.de/ifa/LinkData/sascha>
+                ] .
+
+<http://www.tu-dresden.de/ifa/LinkData/teilanlage1>
+        <http://www.tu-dresden.de/ifa/LinkData/link/beseitzt_Dokument>
+                <http://www.tu-dresden.de/ifa/LinkData/RuI123> .
+
+<http://www.tu-dresden.de/ifa/LinkData/RuI123>
+        <http://www.tu-dresden.de/ifa/LinkData/link/Auftragsnummer>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/Kontakt>
+                "http://www.tu-dresden.de/ifa/LinkData/siemens"^^<java:com.hp.hpl.jena.rdf.model.impl.ResourceImpl> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/PDF>
+                "c:/hier.pdf"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/Projektnummer>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/Type>
+                "R&I Fließbild"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.tu-dresden.de/ifa/LinkData/link/besitzt_Revision>
+                <http://www.tu-dresden.de/ifa/LinkData/revision2> , <http://www.tu-dresden.de/ifa/LinkData/revision1> .
+
+<http://www.tu-dresden.de/ifa/LinkData/sascha>
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "Sascha Steffen"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#N>
+                [ <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                          "Steffen"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://www.w3.org/2001/vcard-rdf/3.0#NAME>
+                          "Sascha"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#PHOTO>
+                "C:/istderhübsch.png"^^<http://www.w3.org/2001/XMLSchema#string> .
