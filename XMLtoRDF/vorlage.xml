@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dokument name="Dokument" projektNr="12345" auftragsNr="6789">
+	<Revision name="Revision1">
+		<Nummer>1</Nummer>
+		<PDF>
+			file://rev1.pdf
+		</PDF>
+		<erstellt>
+			<Datum>
+				2013-06-14
+			</Datum>
+			<von>
+				.ralfmue
+			</von>
+		</erstellt>
+		<geprueft>
+			<Datum>
+				2013-06-22
+			</Datum>
+			<von>
+				.emuster
+			</von>
+		</geprueft>
+		<freigegeben>
+			<Datum>
+				2013-06-23
+			</Datum>
+			<von>
+				.emeier
+			</von>
+		</freigegeben>
+		<Kommentar>
+			Erste Änderung
+		</Kommentar>
+	</Revision>
+	<Revision name="Revision2">
+		<Nummer>
+			2
+		</Nummer>
+		<PDF>
+			file://rev1.pdf
+		</PDF>
+		<Datum>20.05.2013</Datum>
+		<Kommmentar>Zweite Änderung</Kommentar>
+		<erstellt>
+			<Datum>2013-05-17</Datum>
+			<von>
+				.emeier
+			</von>
+		</erstellt>
+	</Revision>
+	<Kontakt>
+		.firma1
+	</Kontakt>
+	<Firma name="firma1">
+			<Name>
+			Siemens AG
+		</Name>
+		<Tel>
+			12345678
+		</Tel>
+		<Mail>
+			siemens@simens.de
+		</Mail>
+	</Firma>
+	<Person name="ralfmue">
+		<Vorname>Ralf</Vorname>
+		<Name>Müller</Name>
+		<Foto>
+			file://foto1.png
+		</Foto>
+		<angestelltBei>
+			.firma1
+		</angestelltBei>
+	</Person>
+	<Person name="emuster">
+		<Vorname>Emil</Vorname>
+		<Name>Mustermann</Name>
+		<Foto>
+			file://foto2.png
+		</Foto>
+	</Person>
+	<Person name="emeier">
+		<Vorname>Erna</Vorname>
+		<Name>Meier</Name>
+		<Foto>
+			file://foto3.png
+		</Foto>
+	</Person>
+</Dokument>
