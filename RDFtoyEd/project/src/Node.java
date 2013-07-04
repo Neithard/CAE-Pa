@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -27,6 +28,7 @@ public class Node extends NamedGraphElement {
 		super(name);
 		id=nodeIdCounter;
 		nodeIdCounter++;
+		edges=new ArrayList<Edge>();
 	}
 
 }
