@@ -10,11 +10,9 @@ public class XmlWriter {
 	private Document xmlDoc;
 	private static final String nodeIdChar="n";
 	private static final String portIdChar="d";
-	private int nodeCounter;
 	
 	public XmlWriter(String OutPutPath) {
 		this.OutPutPath=OutPutPath;
-		nodeCounter=0;
 		
 		
 	}

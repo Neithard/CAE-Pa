@@ -20,6 +20,7 @@ import com.hp.hpl.jena.vocabulary.VCARD;
 public class RdfFileLoader {
 	private Model model;
 	private List<Node> persons;
+	private List<Node> companies;
 
 	public RdfFileLoader(String sourceFile) throws IllegalArgumentException
 	{
@@ -40,13 +41,13 @@ public class RdfFileLoader {
 		model.write(System.out);	
 		
 		persons=new ArrayList<Node>();
+		companies=new ArrayList<Node>();
 		
 		queryPersons();
 	}
 	
 	/*
 	 * Create Person Nodes
-	 * https://jena.apache.org/tutorials/rdf_api.html
 	 */
 	private void queryPersons()
 	{
@@ -65,4 +66,25 @@ public class RdfFileLoader {
 			}
 		}
 	}
+	
+	/*
+	 * Create Company Nodes
+	 */
+	private void queryCompanies()
+	{
+		ResIterator iter = model.listSubjectsWithProperty(VCARD.FN);
+		while(iter.hasNext()) {
+			Resource r= iter.nextResource();
+			if(r.hasProperty(VCARD.N))
+			{
+				r=r.getProperty(VCARD.N).getResource();
+
+				
+				String name=r.getProperty(VCARD.NAME).getObject().asLiteral().getValue().toString();
+				name=name + " " +  r.getProperty(VCARD.Family).getObject().asLiteral().getValue().toString();
+				System.out.println("New person: " + name);
+				persons.add(new Node(name));
+			}
+		}
+	}	
 }

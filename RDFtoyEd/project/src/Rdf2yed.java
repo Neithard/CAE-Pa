@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class rdf2yed {
+public class Rdf2yed {
 
 	
 	public static void main(String[] args)  {
