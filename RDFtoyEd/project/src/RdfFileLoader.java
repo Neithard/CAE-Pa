@@ -61,8 +61,7 @@ public class RdfFileLoader {
 				
 				String name=r.getProperty(VCARD.NAME).getObject().asLiteral().getValue().toString();
 				name=name + " " +  r.getProperty(VCARD.Family).getObject().asLiteral().getValue().toString();
-				System.out.println("New person: " + name);
-				persons.add(new Node(name));
+				persons.add(new Node(name, NodeType.PERSON));
 			}
 		}
 	}
@@ -82,8 +81,7 @@ public class RdfFileLoader {
 				
 				String name=r.getProperty(VCARD.NAME).getObject().asLiteral().getValue().toString();
 				name=name + " " +  r.getProperty(VCARD.Family).getObject().asLiteral().getValue().toString();
-				System.out.println("New person: " + name);
-				persons.add(new Node(name));
+				persons.add(new Node(name, NodeType.COMPANY));
 			}
 		}
 	}	

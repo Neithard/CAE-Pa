@@ -1,6 +1,6 @@
 
 public class NamedGraphElement {
-	private final String name;
+	protected final String name;
 
 	public NamedGraphElement(String name) {
 		super();

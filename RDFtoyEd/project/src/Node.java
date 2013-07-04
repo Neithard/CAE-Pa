@@ -1,14 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class Node extends NamedGraphElement {
 	private static int nodeIdCounter=0;
 	private final int id;
 	private List<Edge> edges;
+	private NodeType type;
 	
 	
+	public NodeType getType() {
+		return type;
+	}
+
+	public void setType(NodeType type) {
+		this.type = type;
+	}
+
 	public List<Edge> getEdges() {
 		return edges;
 	}
@@ -24,11 +31,14 @@ public class Node extends NamedGraphElement {
 	}
 
 
-	public Node(String name){
+	public Node(String name, NodeType type){
 		super(name);
 		id=nodeIdCounter;
 		nodeIdCounter++;
 		edges=new ArrayList<Edge>();
+		this.type=type;
+		
+		System.out.println("New " + this.type.toString() + ": " + this.name);
 	}
 
 }
