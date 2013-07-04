@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.tu-dresden.de/ifa/LinkData/link/"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:j.1="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/siemens">
+    <vcard:MAILER rdf:datatype="http://www.w3.org/2001/XMLSchema#string">siemens@fake.server</vcard:MAILER>
+    <vcard:PHOTO rdf:datatype="http://www.w3.org/2001/XMLSchema#int">12345678</vcard:PHOTO>
+    <vcard:N rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Siemens</vcard:N>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/sascha">
+    <vcard:PHOTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C:/istderhübsch.png</vcard:PHOTO>
+    <vcard:N rdf:nodeID="A0"/>
+    <vcard:FN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sascha Steffen</vcard:FN>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/revision1">
+    <j.0:freigegeben rdf:nodeID="A1"/>
+    <j.0:geprueft rdf:nodeID="A2"/>
+    <j.0:erstellt rdf:nodeID="A3"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erste Änderung bzg..</rdfs:comment>
+    <j.1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.1:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/tobias"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-18T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/sascha"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-17T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vcard:Family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steffen</vcard:Family>
+    <vcard:NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sascha</vcard:NAME>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/teilanlage1">
+    <j.0:beseitzt_Dokument rdf:resource="http://www.tu-dresden.de/ifa/LinkData/RuI123"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/sascha"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-17T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/tobias"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-18T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/tobias"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-16T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <vcard:Family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steege</vcard:Family>
+    <vcard:NAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobias</vcard:NAME>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/tobias">
+    <vcard:PHOTO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C:/istderschön.png</vcard:PHOTO>
+    <vcard:N rdf:nodeID="A7"/>
+    <vcard:FN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobias Steege</vcard:FN>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/revision2">
+    <j.0:freigegeben rdf:nodeID="A4"/>
+    <j.0:geprueft rdf:nodeID="A5"/>
+    <j.0:erstellt rdf:nodeID="A6"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zweite Änderung bzg..</rdfs:comment>
+    <j.1:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.1:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <j.1:creator rdf:resource="http://www.tu-dresden.de/ifa/LinkData/tobias"/>
+    <j.1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-16T22:00:00Z</j.1:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.tu-dresden.de/ifa/LinkData/RuI123">
+    <j.0:besitzt_Revision rdf:resource="http://www.tu-dresden.de/ifa/LinkData/revision2"/>
+    <j.0:besitzt_Revision rdf:resource="http://www.tu-dresden.de/ifa/LinkData/revision1"/>
+    <j.0:Kontakt rdf:datatype="java:com.hp.hpl.jena.rdf.model.impl.ResourceImpl">http://www.tu-dresden.de/ifa/LinkData/siemens</j.0:Kontakt>
+    <j.0:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R&amp;I Fließbild</j.0:Type>
+    <j.0:Projektnummer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:Projektnummer>
+    <j.0:Auftragsnummer rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:Auftragsnummer>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c:/hier.pdf</j.0:PDF>
+  </rdf:Description>
+</rdf:RDF>
