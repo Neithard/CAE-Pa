@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY webprotege "http://protege.stanford.edu/webprotege/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://tu-dresden.de/ifa/cae/"
+     xml:base="http://tu-dresden.de/ifa/cae/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:webprotege="http://protege.stanford.edu/webprotege/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://tu-dresden.de/ifa/cae/">
+        <webprotege:revision rdf:datatype="&xsd;integer">28</webprotege:revision>
+        <rdfs:comment rdf:datatype="&xsd;string">CAE@Pa</rdfs:comment>
+        <dc:date rdf:datatype="&xsd;dateTime">Jun 16, 2013 1:41:42 PM</dc:date>
+        <dc:creator rdf:datatype="&xsd;string">Neithard</dc:creator>
+        <rdfs:comment rdf:datatype="&xsd;string">This ontology was generated from an ontology revision in webprotege. See http://webprotege-beta.stanford.edu</rdfs:comment>
+        <dc:creator rdf:datatype="&xsd;string">system</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/datatypes/VMfqKMwUiNpfPMZkkiVcs -->
+
+    <rdfs:Datatype rdf:about="http://webprotege.stanford.edu/datatypes/VMfqKMwUiNpfPMZkkiVcs">
+        <rdfs:label xml:lang="en">xsd:string
+</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/checked -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/checked">
+        <rdfs:label xml:lang="en">checked</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/creation"/>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/revision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/created -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/created">
+        <rdfs:label xml:lang="en">created</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/creation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/creation -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/creation"/>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/has -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/has">
+        <rdfs:label xml:lang="en">has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/has_dokument -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/has_dokument">
+        <rdfs:label xml:lang="en">has dokument</rdfs:label>
+        <rdfs:range rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/equipment"/>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/has_firm -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/has_firm">
+        <rdfs:label xml:lang="en">has firm</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/has_revision -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/has_revision">
+        <rdfs:label xml:lang="en">has revision</rdfs:label>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/has"/>
+        <rdfs:range rdf:resource="http://tu-dresden.de/ifa/cae/revision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/released -->
+
+    <owl:ObjectProperty rdf:about="http://tu-dresden.de/ifa/cae/released">
+        <rdfs:label xml:lang="en">released</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://tu-dresden.de/ifa/cae/creation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/comment -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/comment">
+        <rdfs:label xml:lang="en">revision comment</rdfs:label>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/revision"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/date -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/date">
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/email -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/email">
+        <rdfs:label xml:lang="en">email adress</rdfs:label>
+        <rdfs:comment xml:lang="en">companys email adress</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/company"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/job_number -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/job_number">
+        <rdfs:label xml:lang="en">job number</rdfs:label>
+        <rdfs:comment xml:lang="en">Shows the job number.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/name -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/name">
+        <rdfs:label xml:lang="en">company name</rdfs:label>
+        <rdfs:comment xml:lang="en">company name</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/company"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/number -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/number">
+        <rdfs:label xml:lang="en">revision number</rdfs:label>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/revision"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/pdf -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/pdf">
+        <rdfs:label xml:lang="en">PDF
+</rdfs:label>
+        <rdfs:comment xml:lang="en">Shows the pathto the PDF-File.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/project_number -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/project_number">
+        <rdfs:label xml:lang="en">project number</rdfs:label>
+        <rdfs:comment xml:lang="en">Shows the project number.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/telephone_number -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/telephone_number">
+        <rdfs:label xml:lang="en">telephone number</rdfs:label>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/company"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/typ -->
+
+    <owl:DatatypeProperty rdf:about="http://tu-dresden.de/ifa/cae/typ">
+        <rdfs:label xml:lang="en">typ</rdfs:label>
+        <rdfs:comment xml:lang="en">Shows the typ.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/company -->
+
+    <owl:Class rdf:about="http://tu-dresden.de/ifa/cae/company">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/telephone_number"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/email"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/name"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/dokument -->
+
+    <owl:Class rdf:about="http://tu-dresden.de/ifa/cae/dokument">
+        <rdfs:label xml:lang="en">dokument</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/has_revision"/>
+                <owl:onClass rdf:resource="http://tu-dresden.de/ifa/cae/revision"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/job_number"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/pdf"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/project_number"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/has_firm"/>
+                <owl:onClass rdf:resource="http://tu-dresden.de/ifa/cae/company"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/typ"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/equipment -->
+
+    <owl:Class rdf:about="http://tu-dresden.de/ifa/cae/equipment">
+        <rdfs:label xml:lang="en">equipment</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/has_dokument"/>
+                <owl:someValuesFrom rdf:resource="http://tu-dresden.de/ifa/cae/dokument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/person -->
+
+    <owl:Class rdf:about="http://tu-dresden.de/ifa/cae/person">
+        <rdfs:label xml:lang="en">person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tu-dresden.de/ifa/cae/revision -->
+
+    <owl:Class rdf:about="http://tu-dresden.de/ifa/cae/revision">
+        <rdfs:label xml:lang="en">revision</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/checked"/>
+                <owl:onClass rdf:resource="http://tu-dresden.de/ifa/cae/person"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/comment"/>
+                <owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/created"/>
+                <owl:onClass rdf:resource="http://tu-dresden.de/ifa/cae/person"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/pdf"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/released"/>
+                <owl:onClass rdf:resource="http://tu-dresden.de/ifa/cae/person"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://tu-dresden.de/ifa/cae/number"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
