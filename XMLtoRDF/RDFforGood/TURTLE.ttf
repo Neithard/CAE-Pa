@@ -1,0 +1,35 @@
+<http://tu-dresden.de/ifa/cae/10002>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10000> .
+
+<http://tu-dresden.de/ifa/cae/10007>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10004> .
+
+<http://tu-dresden.de/ifa/cae/10000>
+        <http://tu-dresden.de/ifa/cae/typ>
+                "R&I A0 EN 10628"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/10005>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10004> .
+
+<http://tu-dresden.de/ifa/cae/10003>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10000> .
+
+<http://tu-dresden.de/ifa/cae/10008>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10004> .
+
+<http://tu-dresden.de/ifa/cae/10001>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10000> .
+
+<http://tu-dresden.de/ifa/cae/10006>
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/10004> .
+
+<http://tu-dresden.de/ifa/cae/10004>
+        <http://tu-dresden.de/ifa/cae/typ>
+                "R&I A2 EN 10628"^^<http://www.w3.org/2001/XMLSchema#string> .
