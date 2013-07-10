@@ -55,6 +55,8 @@ public class RdfFileLoader {
 	
 				persons=new HashMap<String, Node>();
 				companies=new HashMap<String, UniqueNode>();
+				equipmentPieces= new HashMap<String, UniqueNode>();
+				documents= new HashMap<String, UniqueNode>();
 		}	catch (Exception e) {
 			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
@@ -72,7 +74,7 @@ public class RdfFileLoader {
 	{	
 		//create node
 		String label=rawPieceList.get(0).getLiteral("label").getValue().toString() + " (" + uid + ")"; //label is present in every solution
-		UniqueNode equipmentNode=new UniqueNode(label, NodeType.GERAET, uid);
+		UniqueNode equipmentNode=new UniqueNode(label,  NodeType.GERAET, uid);
 		equipmentPieces.put(uid, equipmentNode);
 		
 		//find comment
@@ -187,7 +189,7 @@ public class RdfFileLoader {
 		 * There might be several results for one revision, but their information (for this context) is the same.
 		 */
 		Set<String> revNumbers= new HashSet<String>();
-		MakeRevNodeReturnType newestRevision;
+		MakeRevNodeReturnType newestRevision=new MakeRevNodeReturnType();
 		for(QuerySolution revSol : rawDocList)
 		{
 			String revisionNr=revSol.getLiteral("revision_number").getValue().toString();
@@ -199,7 +201,7 @@ public class RdfFileLoader {
 				
 				if(revNode.getDate() != "")
 				{
-					if(newestRevision != null)
+					if(newestRevision.getDate() != "")
 					{
 						if(new Double(newestRevision.getDate().replace("," , "."))
 								< new Double(revNode.getDate().replace(",", ".")))
@@ -213,7 +215,7 @@ public class RdfFileLoader {
 		}
 		
 		//set newest Revision node if there is one
-		if(newestRevision != null)
+		if(newestRevision.getDate() != "")
 		{
 			newestRevision.getNode().setType(NodeType.CURRENTREVISION);
 		}

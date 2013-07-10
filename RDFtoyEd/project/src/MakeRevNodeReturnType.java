@@ -23,5 +23,11 @@ public class MakeRevNodeReturnType {
 		setDate(date);
 		setNode(node);
 	}
+	
+	public MakeRevNodeReturnType()
+	{
+		setDate("");
+		setNode(new Node("",NodeType.EMPTY));
+	}
 
 }

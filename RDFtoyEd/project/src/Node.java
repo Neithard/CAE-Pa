@@ -33,7 +33,7 @@ public class Node extends NamedGraphElement {
 
 	public Node(String name, NodeType type){
 		super(name);
-		id=nodeIdCounter;
+		this.id=Node.nodeIdCounter;
 		nodeIdCounter++;
 		edges=new ArrayList<Edge>();
 		this.type=type;
