@@ -6,7 +6,7 @@ public class Rdf2yed {
 	
 	public static void main(String[] args)  {
 			try {
-			RdfFileLoader rdfLoader=new RdfFileLoader("res/RDF.rdf");
+			RdfFileLoader rdfLoader=new RdfFileLoader("RDF.rdf");
 		} catch  (IllegalArgumentException e) {
 			System.out.println(e.getMessage());
 		}
