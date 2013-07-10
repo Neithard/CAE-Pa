@@ -163,13 +163,6 @@ public class XmlWriter {
 		genNodeElement.setAttribute("configuration", "BevelNodeWithShadow");
 		dataElement.appendChild(genNodeElement);
 		
-		Element geomElement=doc.createElement("y:Geometry");
-		geomElement.setAttribute("height" , "10.0");
-		geomElement.setAttribute("width" , "10.0");
-		geomElement.setAttribute("y" , "0");
-		geomElement.setAttribute("x" , "0");
-		genNodeElement.appendChild(geomElement);
-		
 		Element fillElement=doc.createElement("y:Fill");
 		fillElement.setAttribute("color", "#FF9900");
 		fillElement.setAttribute("transparent", "false");
@@ -200,14 +193,6 @@ public class XmlWriter {
 		label.setAttribute("textColor", "#000000");
 		label.setAttribute("visible", "true");
 		label.setTextContent(labelText);
-		
-		Element smartNodeLabel=doc.createElement("y:SmartNodeLabelModel");
-		smartNodeLabel.setAttribute("distance", "4.0"); //TODO what's this?
-		label.appendChild(doc.createElement("y:LabelModel")).appendChild(smartNodeLabel);
-		
-		label.appendChild(doc.createElement("y:ModelParameter")).appendChild(doc.createElement("y:SmartNodeLabelModelParameter"));
-		
-		
 		
 		return label;
 	}
