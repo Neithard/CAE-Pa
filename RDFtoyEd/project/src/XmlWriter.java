@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,18 +11,10 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import javax.xml.validation.Schema;
-import javax.xml.validation.Validator;
-import javax.xml.validation.ValidatorHandler;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-//import org.w3c.dom.Node; => this is not imported for a reason => we also define our own class named Node
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import com.sun.org.apache.bcel.internal.classfile.Attribute;
 
 public class XmlWriter {
 	private Document doc;
