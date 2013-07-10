@@ -20,7 +20,7 @@ import com.hp.hpl.jena.query.ResultSet;
  */
 public class RdfFileLoader {
 	private List<Node> persons;
-	private List<Node> companies;
+	private HashMap<String, UniqueNode> companies;
 	private HashMap<String, UniqueNode> equipmentPieces;
 	private HashMap<String, UniqueNode> documents;
 	
@@ -52,7 +52,7 @@ public class RdfFileLoader {
 				}
 	
 				persons=new ArrayList<Node>();
-				companies=new ArrayList<Node>();
+				companies=new HashMap<String, UniqueNode>();
 		}	catch (Exception e) {
 			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
@@ -129,9 +129,50 @@ public class RdfFileLoader {
 	
 	private UniqueNode createDocumentNode(String docUid, List<QuerySolution> rawDocList)
 	{
+		//build node
 		String name=rawDocList.get(0).getLiteral("typ").toString() + " (" + docUid + ")"; //type should be the same for every entry
+		UniqueNode docNode=new UniqueNode(name, NodeType.DOCUMENT, docUid);
 		
-		return new UniqueNode(name, NodeType.DOCUMENT, docUid);
+		/*
+		 * build company node
+		 * 
+		 * this should be trivial because we find this information in all of the provided
+		 * QuerySolutions if it exists
+		 */
+		QuerySolution sol=rawDocList.get(0);
+		if(sol.contains("comp_uid"))
+		{
+			String comp_uid=sol.getLiteral("comp_uid").toString();
+			if(!companies.containsKey(comp_uid))
+			{
+				//Company Node itself
+				UniqueNode newCompanyNode= new UniqueNode(sol.getLiteral("company_name").toString() + " (" + comp_uid + ")",
+						NodeType.COMPANY, 
+						comp_uid);
+				//EMail - mandatory
+				Node compEmail=new Node(sol.getLiteral("email_adress").toString(), NodeType.EMAIL);
+				newCompanyNode.addEdge(new Edge("eMail", compEmail));
+				//Telephone - mandatory
+				Node compPhone= new Node(sol.getLiteral("telephone_number").toString(), NodeType.PHONE);
+				newCompanyNode.addEdge(new Edge("phone", compPhone));
+				//Street Address - optional
+				if(sol.contains("firm_zip"))
+				{
+					//Address
+					String comp_address=sol.getLiteral("firm_street").toString() + "\n" +
+										sol.getLiteral("firm_zip").toString() + " " +
+										sol.getLiteral("firm_location");
+					newCompanyNode.addEdge(new Edge("address",
+							               new Node(comp_address,NodeType.ADDRESS)));
+				}
+				
+				companies.put(comp_uid, newCompanyNode);
+			}
+			Node companyNode= companies.get(comp_uid);
+
+		}
+		
+		return docNode;
 	}
 	
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
@@ -140,7 +181,7 @@ public class RdfFileLoader {
 			"	SELECT  ?label ?typ ?project_number ?comment ?job_number ?revision_number    " + 
 			"	        ?revision_comment ?PDF ?ch_name ?ch_date ?cr_name ?cr_date  " + 
 			"	        ?re_name ?re_date  ?company_name  ?email_adress  ?telephone_number   " + 
-			"	        ?firm_location  ?firm_zip  ?firm_street  ?ger_uid ?doc_uid " + 
+			"	        ?firm_location  ?firm_zip  ?firm_street  ?ger_uid ?doc_uid  ?comp_uid" + 
 			"   " + 
 			"					    WHERE {   " + 
 			"					           ?gereat    cae:has_dokument  ?dokument;   " + 
@@ -172,6 +213,7 @@ public class RdfFileLoader {
 "   " + 
 "					OPTIONAL { ?dokument   cae:has_firm ?firm.   " + 
 "					           ?firm       cae:company_name ?company_name;    " + 
+"                                          cae:uid          ?comp_uid;       "	+
 "                                          cae:email_adress ?email_adress;   " + 
 "					                       cae:telephone_number ?telephone_number. }   " + 
 "   " + 
