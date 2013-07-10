@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -10,34 +12,92 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.validation.Schema;
+import javax.xml.validation.Validator;
+import javax.xml.validation.ValidatorHandler;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+//import org.w3c.dom.Node; => this is not imported for a reason => we also define our own class named Node
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.sun.org.apache.bcel.internal.classfile.Attribute;
+
 public class XmlWriter {
-	private String OutPutPath;
-	private Document xmlDoc;
+	private Document doc;
 	private static final String nodeIdChar="n";
-	private static final String portIdChar="d";
+	DocumentBuilder docBuilder;
+	DocumentBuilderFactory docFactory;
 	
+	public XmlWriter() throws ParserConfigurationException
+	{
+		docFactory = DocumentBuilderFactory.newInstance();
+		docFactory.setValidating(true); 
+		docFactory.setNamespaceAware(true); 
+		docBuilder = docFactory.newDocumentBuilder();
+		doc = docBuilder.newDocument();
+	}
 	/*
 	 * inspired by: http://www.mkyong.com/java/how-to-create-xml-file-in-java-dom/
 	 */
-	public static void makeOutput(String OutPutPath, RdfFileLoader rdf)
+	public void makeOutput(String OutPutPath, RdfFileLoader rdf)
 	{
-		 try {
-			 
-				DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-				DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
-		 
+		 try {		 
+			 	/*
+			 	 * Static Part
+			 	 */
 				// root element
-				Document doc = docBuilder.newDocument();
 				Element rootElement = doc.createElement("graphml");
 				doc.appendChild(rootElement);
-		 
+				rootElement.setAttribute("xmlns", "http://graphml.graphdrawing.org/xmlns");
+				rootElement.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance",
+					    "xsi:schemaLocation", "http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd");
+				
+				//some keys
+				rootElement.appendChild(makeKeyElement( 0, "resources", "graphml"));
+				rootElement.appendChild(makeKeyElement( 1, "portgraphics" ,"port"));
+				rootElement.appendChild(makeKeyElement( 2, "portgeometry", "port" ));
+				rootElement.appendChild(makeKeyElement( 3, "portuserdata", "port"));
+				ArrayList<Attr> attrList=new ArrayList<Attr>();
+				attrList.add(doc.createAttribute("attr.name"));
+				
+				attrList.get(0).setNodeValue("url");
+				rootElement.appendChild(makeKeyElement( 4, "string", "attr.type", "node", attrList));	
+				
+				attrList=new ArrayList<Attr>();
+				attrList.add(doc.createAttribute("attr.name"));
+				attrList.get(0).setNodeValue("description");
+				rootElement.appendChild(makeKeyElement( 5, "string", "attr.type", "node", attrList));					
+				
+				rootElement.appendChild(makeKeyElement( 6, "nodegraphics", "node"));
+				
+				attrList=new ArrayList<Attr>();
+				attrList.add(doc.createAttribute("attr.name"));
+				attrList.get(0).setNodeValue("url");
+				rootElement.appendChild(makeKeyElement( 7, "string", "attr.type", "edge", attrList));	
+				
+				attrList=new ArrayList<Attr>();
+				attrList.add(doc.createAttribute("attr.name"));
+				attrList.get(0).setNodeValue("description");
+				rootElement.appendChild(makeKeyElement( 8, "string", "attr.type", "edge", attrList));	
+				
+				rootElement.appendChild(makeKeyElement( 9, "edgegraphics", "edge"));
+				
+				
+				//the graph element
+				Element graph=doc.createElement("graph");
+				graph.setAttribute("edgedefault", "directed");
+				graph.setAttribute("id", "G");
+				rootElement.appendChild(graph);
+				
+				//append the document elements
+				for(Node n : rdf.getDocuments())
+				{
+					graph.appendChild(makeDocumentElement(n));
+				}
+				
 				// staff elements
 				Element staff = doc.createElement("Staff");
 				rootElement.appendChild(staff);
@@ -79,7 +139,7 @@ public class XmlWriter {
 				 * source: http://stackoverflow.com/questions/1384802/java-how-to-indent-xml-generated-by-transformer
 				 */
 				transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-				transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+				transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "3");
 				//end copy
 				
 				DOMSource source = new DOMSource(doc);
@@ -92,12 +152,40 @@ public class XmlWriter {
 		 
 				System.out.println("File saved!");
 		 
-			  } catch (ParserConfigurationException pce) {
-				pce.printStackTrace();
 			  } catch (TransformerException tfe) {
 				tfe.printStackTrace();
 			  }
 	}
-	 
+	
+	private  Element makeKeyElement(int idNum, String type,  String forStr)
+	{
+		return makeKeyElement(idNum, type, "yfiles.type", forStr, new ArrayList<Attr>());
+	}
 
+	private  Element makeKeyElement(int idNum, String type, String typeTString, String forStr, List<Attr> otherAttrs)
+	{
+		Element keyElement=doc.createElement("key");
+		keyElement.setAttribute("for", forStr);
+		keyElement.setAttribute("id", "d" + idNum);
+		keyElement.setAttribute(typeTString, type);
+		for(Attr a : otherAttrs)
+		{
+			keyElement.setAttributeNode(a);
+		}
+		return keyElement;
+	}
+	
+	private Element makeDocumentElement(Node docNode)
+	{
+		Element docElement=doc.createElement("node");
+		docElement.setAttribute("id", nodeIdChar + docNode.getId());
+		
+		Element dataElement=doc.createElement("data");
+		dataElement.setAttribute("key", "d6");
+		docElement.appendChild(dataElement);
+		
+		
+		return docElement;
+	}
+	  
 }
