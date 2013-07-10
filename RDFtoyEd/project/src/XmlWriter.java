@@ -54,6 +54,8 @@ public class XmlWriter {
 				rootElement.setAttribute("xmlns", "http://graphml.graphdrawing.org/xmlns");
 				rootElement.setAttributeNS("http://www.w3.org/2001/XMLSchema-instance",
 					    "xsi:schemaLocation", "http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd");
+				rootElement.setAttribute("xmlns:y", "http://www.yworks.com/xml/graphml");
+				rootElement.setAttribute("xmlns:yed", "http://www.yworks.com/xml/yed/3");
 				
 				//some keys
 				rootElement.appendChild(makeKeyElement( 0, "resources", "graphml"));
@@ -92,44 +94,17 @@ public class XmlWriter {
 				graph.setAttribute("id", "G");
 				rootElement.appendChild(graph);
 				
+				/*
+				 * generated Part
+				 */
 				//append the document elements
 				for(Node n : rdf.getDocuments())
 				{
 					graph.appendChild(makeDocumentElement(n));
 				}
 				
-				// staff elements
-				Element staff = doc.createElement("Staff");
-				rootElement.appendChild(staff);
-		 
-				// set attribute to staff element
-				Attr attr = doc.createAttribute("id");
-				attr.setValue("1");
-				staff.setAttributeNode(attr);
-		 
-				// shorten way
-				// staff.setAttribute("id", "1");
-		 
-				// firstname elements
-				Element firstname = doc.createElement("firstname");
-				firstname.appendChild(doc.createTextNode("yong"));
-				staff.appendChild(firstname);
-		 
-				// lastname elements
-				Element lastname = doc.createElement("lastname");
-				lastname.appendChild(doc.createTextNode("mook kim"));
-				staff.appendChild(lastname);
-		 
-				// nickname elements
-				Element nickname = doc.createElement("nickname");
-				nickname.appendChild(doc.createTextNode("mkyong"));
-				staff.appendChild(nickname);
-		 
-				// salary elements
-				Element salary = doc.createElement("salary");
-				salary.appendChild(doc.createTextNode("100000"));
-				staff.appendChild(salary);
-		 
+				
+				
 				// write the content into xml file
 				TransformerFactory transformerFactory = TransformerFactory.newInstance();
 				Transformer transformer = transformerFactory.newTransformer();
@@ -139,7 +114,7 @@ public class XmlWriter {
 				 * source: http://stackoverflow.com/questions/1384802/java-how-to-indent-xml-generated-by-transformer
 				 */
 				transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-				transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "3");
+				transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 				//end copy
 				
 				DOMSource source = new DOMSource(doc);
@@ -184,8 +159,57 @@ public class XmlWriter {
 		dataElement.setAttribute("key", "d6");
 		docElement.appendChild(dataElement);
 		
+		Element genNodeElement=doc.createElement("y:GenericNode");
+		genNodeElement.setAttribute("configuration", "BevelNodeWithShadow");
+		dataElement.appendChild(genNodeElement);
+		
+		Element geomElement=doc.createElement("y:Geometry");
+		geomElement.setAttribute("height" , "10.0");
+		geomElement.setAttribute("width" , "10.0");
+		geomElement.setAttribute("y" , "0");
+		geomElement.setAttribute("x" , "0");
+		genNodeElement.appendChild(geomElement);
+		
+		Element fillElement=doc.createElement("y:Fill");
+		fillElement.setAttribute("color", "#FF9900");
+		fillElement.setAttribute("transparent", "false");
+		genNodeElement.appendChild(fillElement);
+		
+		Element borderStyleElement=doc.createElement("y:BorderStyle");
+		borderStyleElement.setAttribute("hasColor", "false");
+		borderStyleElement.setAttribute("type", "line");
+		borderStyleElement.setAttribute("width", "1.0");
+		genNodeElement.appendChild(borderStyleElement);
+		
+		genNodeElement.appendChild(makeNodeLabel(docNode.getName()));
 		
 		return docElement;
+	}
+	
+	private Element makeNodeLabel(String labelText)
+	{
+		Element label=doc.createElement("y:NodeLabel");
+		label.setAttribute("alignment", "center");
+		label.setAttribute("autoSizePolicy", "content");
+		label.setAttribute("fontFamily", "Dialog");
+		label.setAttribute("fontSize", "12");
+		label.setAttribute("fontStyle", "plain");
+		label.setAttribute("hasBackgroundColor", "false");
+		label.setAttribute("hasLineColor", "false");
+		label.setAttribute("modelName", "custom");
+		label.setAttribute("textColor", "#000000");
+		label.setAttribute("visible", "true");
+		label.setTextContent(labelText);
+		
+		Element smartNodeLabel=doc.createElement("y:SmartNodeLabelModel");
+		smartNodeLabel.setAttribute("distance", "4.0"); //TODO what's this?
+		label.appendChild(doc.createElement("y:LabelModel")).appendChild(smartNodeLabel);
+		
+		label.appendChild(doc.createElement("y:ModelParameter")).appendChild(doc.createElement("y:SmartNodeLabelModelParameter"));
+		
+		
+		
+		return label;
 	}
 	  
 }
