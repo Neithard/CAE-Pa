@@ -133,6 +133,11 @@ public class XmlWriter {
 				{
 					graph.appendChild(makePersonElement(n));
 				}
+				//append empty nodes
+				for(Node n : rdf.getEmpty())
+				{
+					graph.appendChild(makeEmptyElement(n));
+				}
 				
 				
 				// write the content into xml file
@@ -185,6 +190,51 @@ public class XmlWriter {
 		Element compElement=makeGenericElement(compNode);
 		
 		return compElement;
+	}
+	
+	private Element makeEmptyElement(Node node)
+	{
+		Element empty=doc.createElement("node");
+		empty.setAttribute("id", nodeIdChar + node.getId());
+		
+		Element data=doc.createElement("data");
+		data.setAttribute("key", "d6");
+		empty.appendChild(data);
+		
+		Element shN=doc.createElement("y:ShapeNode");
+		data.appendChild(shN);
+		
+		Element fill=doc.createElement("y:Fill");
+		fill.setAttribute("color", "#FFCC00");
+		fill.setAttribute("transparent", "false");
+		shN.appendChild(fill);
+		
+		
+		Element borderStyleElement=doc.createElement("y:BorderStyle");
+		borderStyleElement.setAttribute("color", "#000000");
+		borderStyleElement.setAttribute("type", "line");
+		borderStyleElement.setAttribute("width", "1.0");
+		shN.appendChild(borderStyleElement);
+		
+		Element label=doc.createElement("y:NodeLabel");
+		label.setAttribute("alignment", "center");
+		label.setAttribute("autoSizePolicy", "content");
+		label.setAttribute("fontFamily", "Dialog");
+		label.setAttribute("fontSize", "12");
+		label.setAttribute("fontStyle", "plain");
+		label.setAttribute("hasBackgroundColor", "false");
+		label.setAttribute("hasLineColor", "false");
+		label.setAttribute("modelName", "custom");
+		label.setAttribute("textColor", "#000000");
+		label.setAttribute("visible", "false");
+		shN.appendChild(label);
+		
+		Element shape=doc.createElement("y:Shape");
+		shape.setAttribute("type", "ellipse");
+		shN.appendChild(shape);
+		
+		
+		return empty;
 	}
 	
 	private Element makePersonElement(Node personNode)
