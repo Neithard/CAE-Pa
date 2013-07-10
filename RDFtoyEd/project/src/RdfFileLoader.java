@@ -26,15 +26,39 @@ public class RdfFileLoader {
 	private HashMap<String, UniqueNode> companies;
 	private HashMap<String, UniqueNode> equipmentPieces;
 	private HashMap<String, UniqueNode> documents;
-		
+	private List<Node> mailNodes;
+	private List<Node> otherNodes;
+	private List<Node> emptyNodes;
+	private List<Node> phoneNodes;	
+	
 	public Collection<UniqueNode> getCompanies()
 	{
 		return companies.values();
 	}
 	
+	public Collection<Node> getEmpty()
+	{
+		return emptyNodes;
+	}
+	
+	public Collection<Node> getMail()
+	{
+		return mailNodes;
+	}
+	
+	public Collection<Node> getOther()
+	{
+		return otherNodes;
+	}
+	
 	public Collection<Node> getPersons()
 	{
 		return persons.values();
+	}
+	
+	public Collection<Node> getPhones()
+	{
+		return phoneNodes;
 	}
 	
 	public Collection<UniqueNode> getEquipment()
@@ -75,6 +99,10 @@ public class RdfFileLoader {
 				companies=new HashMap<String, UniqueNode>();
 				equipmentPieces= new HashMap<String, UniqueNode>();
 				documents= new HashMap<String, UniqueNode>();
+				mailNodes=new ArrayList<Node>();
+				otherNodes=new ArrayList<Node>();
+				emptyNodes=new ArrayList<Node>();
+				phoneNodes=new ArrayList<Node>();				
 		}	catch (Exception e) {
 			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
@@ -102,6 +130,7 @@ public class RdfFileLoader {
 			if(!comment.isEmpty())
 			{
 				Node commentNode= new Node(comment,NodeType.OTHER);
+				otherNodes.add(commentNode);
 				Edge commentEdge=new Edge("comment", commentNode);
 				equipmentNode.addEdge(commentEdge);
 				break;
@@ -174,9 +203,11 @@ public class RdfFileLoader {
 						comp_uid);
 				//EMail - mandatory
 				Node compEmail=new Node(sol.getLiteral("email_adress").getValue().toString(), NodeType.EMAIL);
+				mailNodes.add(compEmail);
 				newCompanyNode.addEdge(new Edge("eMail", compEmail));
 				//Telephone - mandatory
 				Node compPhone= new Node(sol.getLiteral("telephone_number").getValue().toString(), NodeType.PHONE);
+				phoneNodes.add(compPhone);
 				newCompanyNode.addEdge(new Edge("phone", compPhone));
 				//Street Address - optional
 				if(sol.contains("firm_zip"))
@@ -185,8 +216,10 @@ public class RdfFileLoader {
 					String comp_address=sol.getLiteral("firm_street").getValue().toString() + "\n" +
 										sol.getLiteral("firm_zip").getValue().toString() + " " +
 										sol.getLiteral("firm_location").getValue().toString();
+					Node addrNode=new Node(comp_address,NodeType.ADDRESS);
+					otherNodes.add(addrNode);
 					newCompanyNode.addEdge(new Edge("address",
-							               new Node(comp_address,NodeType.ADDRESS)));
+							               addrNode));
 				}
 				
 				companies.put(comp_uid, newCompanyNode);
@@ -194,11 +227,15 @@ public class RdfFileLoader {
 			docNode.addEdge(new Edge("company", companies.get(comp_uid)));
 		}
 		//project number is the same for every solution too
+		Node projNode=new Node(sol.getLiteral("project_number").getValue().toString(), NodeType.OTHER);
+		otherNodes.add(projNode);
 		docNode.addEdge(new Edge("projectNumber",
-						new Node(sol.getLiteral("project_number").getValue().toString(), NodeType.OTHER)));
+						projNode));
 		//also job_number
+		Node jobNode=new Node(sol.getLiteral("job_number").getValue().toString(), NodeType.OTHER);
+		otherNodes.add(jobNode);
 		docNode.addEdge(new Edge("jobNumber",
-				new Node(sol.getLiteral("job_number").getValue().toString(), NodeType.OTHER)));
+				jobNode));
 		
 		/*
 		 * Now we create the Revision nodes
@@ -247,7 +284,7 @@ public class RdfFileLoader {
 	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
 	{
 		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString(), NodeType.REVISION);
-		
+		otherNodes.add(revNode);
 		//created - optional
 		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
 		//checked - optional
@@ -264,9 +301,12 @@ public class RdfFileLoader {
 		{
 			String date = sol.getLiteral(revPrefix + "_date").getValue().toString();
 			Node blankNode = new Node("", NodeType.EMPTY);
+			emptyNodes.add(blankNode);
 			
+			Node dateNode=new Node(date, NodeType.DATE);
+			otherNodes.add(dateNode);
 			blankNode.addEdge(new Edge("date",
-							  new Node(date, NodeType.DATE)));
+							  dateNode));
 			
 			//check if Person exists
 			String personName=sol.getLiteral(revPrefix + "_name").getValue().toString();
