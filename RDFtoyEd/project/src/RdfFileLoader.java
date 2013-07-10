@@ -21,7 +21,7 @@ import com.hp.hpl.jena.query.ResultSet;
  * https://jena.apache.org/tutorials/rdf_api.html
  */
 public class RdfFileLoader {
-	private List<Node> persons;
+	private HashMap<String, Node> persons;
 	private HashMap<String, UniqueNode> companies;
 	private HashMap<String, UniqueNode> equipmentPieces;
 	private HashMap<String, UniqueNode> documents;
@@ -53,7 +53,7 @@ public class RdfFileLoader {
 					equipment.get(uid).add(sol);
 				}
 	
-				persons=new ArrayList<Node>();
+				persons=new HashMap<String, Node>();
 				companies=new HashMap<String, UniqueNode>();
 		}	catch (Exception e) {
 			System.out.println(e.toString());
@@ -187,9 +187,59 @@ public class RdfFileLoader {
 		 * There might be several results for one revision, but their information (for this context) is the same.
 		 */
 		Set<String> revNumbers= new HashSet<String>();
-		
-		
+		for(QuerySolution revSol : rawDocList)
+		{
+			String revisionNr=revSol.getLiteral("revision_number").toString();
+			if(!revNumbers.contains(revisionNr))
+			{
+				revNumbers.add(revisionNr);
+				MakeRevNodeReturnType revNode=makeRevisionNode(revSol);
+				docNode.addEdge(new Edge("hasRev", revNode.getNode()));
+			}
+		}
 		return docNode;
+	}
+	
+	/*
+	 * to compare the Revision's dates we return the Value of the Date String,
+	 * if the String is empty no date could be found;
+	 */
+	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
+	{
+		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").toString(), NodeType.REVISION);
+		
+		//created - optional
+		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
+		//checked - optional
+		maybeMakeRevisionStepNode(revNode, sol, "ch", "checked");	
+		//released - optional
+		maybeMakeRevisionStepNode(revNode, sol, "re", "released");
+		
+		return new MakeRevNodeReturnType(cr_date, revNode);
+	}
+	
+	private String maybeMakeRevisionStepNode(Node parentNode, QuerySolution sol, String revPrefix, String edgeName)
+	{
+		if(sol.contains(revPrefix + "_date"))
+		{
+			String date = sol.getLiteral(revPrefix + "_date").toString();
+			Node blankNode = new Node("", NodeType.EMPTY);
+			
+			blankNode.addEdge(new Edge("date",
+							  new Node(date, NodeType.DATE)));
+			
+			//check if Person exists
+			String personName=sol.getLiteral(revPrefix + "_name").toString();
+			if(!persons.containsKey(personName))
+			{
+				persons.put(personName, new Node(personName, NodeType.PERSON));
+			}
+			blankNode.addEdge(new Edge("by", persons.get(personName)));
+			
+			//finally add it all to the parentNode
+			parentNode.addEdge(new Edge(edgeName, blankNode));
+			return date;
+		} else return "";
 	}
 	
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
