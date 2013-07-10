@@ -12,5 +12,6 @@ public enum NodeType {
 	DATE,
 	REVISIONSTEP,
 	EMPTY,
+	GERAET,
 	OTHER
 }

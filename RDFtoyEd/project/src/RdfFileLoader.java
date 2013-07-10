@@ -1,18 +1,10 @@
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.HashMap;
 
-import riotcmd.infer;
 
 import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.ResIterator;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.Statement;
-import com.hp.hpl.jena.rdf.model.StmtIterator;
 import com.hp.hpl.jena.util.FileManager;
-import com.hp.hpl.jena.vocabulary.VCARD;
 
 import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
@@ -20,19 +12,21 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.util.FileManager;
+
 /*
  * https://jena.apache.org/tutorials/rdf_api.html
  */
 public class RdfFileLoader {
-	private ResultSet results;
 	private List<Node> persons;
 	private List<Node> companies;
+	private List<Node> equipmentPieces;
+	
+	
+	private HashMap<String, List<QuerySolution>> equipment;
 
 	public RdfFileLoader(String sourceFile) throws IllegalArgumentException
 	{
+		equipment= new HashMap<String, List<QuerySolution>>();
 		//create new Query
 		try{
 			Model model=FileManager.get().loadModel(sourceFile);
@@ -40,19 +34,37 @@ public class RdfFileLoader {
 			Query query= QueryFactory.create(queryString);
 			QueryExecution qExec=QueryExecutionFactory.create(query,model);
 			
-			results=qExec.execSelect();
+			ResultSet results=qExec.execSelect();
+			//sort equipment
 			while(results.hasNext())
 			{
 				QuerySolution sol=results.nextSolution();
 				System.out.println(sol.toString());
+				String label=sol.getLiteral("label").toString();
+				
+				if(!equipment.containsKey(label))
+				{
+					equipment.put(label, new ArrayList<QuerySolution>());
+					
+					//create node
+					Node piece=new Node(label, NodeType.GERAET);
+					equipmentPieces.add(piece);
+				}	
+				equipment.get(label).add(sol);
 			}
-			
-			
+
 			persons=new ArrayList<Node>();
 			companies=new ArrayList<Node>();
 		} catch (Exception e) {
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
 		}
+		
+		for(List<QuerySolution> sol : equipment.values())
+		{
+			queryEquipmentPiece(sol);
+		}
+		
+		
 		
 
 
@@ -61,7 +73,19 @@ public class RdfFileLoader {
 		//queryPersons();
 	}
 	
-
+	private void queryEquipmentPiece(List<QuerySolution> rawPieceList)
+	{	
+		HashMap<String, List<QuerySolution>> documents=new HashMap<String, List<QuerySolution>>();
+		//Sort documents by type
+		for(QuerySolution rawDocument : rawPieceList)
+		{
+			String name=rawDocument.getLiteral("typ").toString();
+			if(!documents.containsKey(name))
+			{
+				documents.put(name, new ArrayList<QuerySolution>());
+			}
+		}
+	}
 	
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
 			"	PREFIX cae: <http://tu-dresden.de/ifa/cae/>   " + 
