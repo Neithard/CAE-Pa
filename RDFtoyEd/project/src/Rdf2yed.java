@@ -11,8 +11,7 @@ public class Rdf2yed {
 			System.out.println(e.getMessage());
 		}
 			
-			OleAutomationDateUtil a=new OleAutomationDateUtil();
-			System.out.println(a.fromOADate(new Double(new String("41464,6291319445").replace(",",".")), TimeZone.getDefault()).toString());
+			System.out.println(OleAutomationDateUtil.fromOADate(new Double(new String("41464,6291319445").replace(",",".")), TimeZone.getDefault()).toString());
 		
 	}
 	
