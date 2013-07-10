@@ -19,7 +19,8 @@ import com.hp.hpl.jena.query.ResultSet;
 public class RdfFileLoader {
 	private List<Node> persons;
 	private List<Node> companies;
-	private List<Node> equipmentPieces;
+	private HashMap<String, UniqueNode> equipmentPieces;
+	private HashMap<String, UniqueNode> documents;
 	
 	
 	private HashMap<String, List<QuerySolution>> equipment;
@@ -47,7 +48,8 @@ public class RdfFileLoader {
 					equipment.put(label, new ArrayList<QuerySolution>());
 					
 					//create node
-					Node piece=new Node(label, NodeType.GERAET);
+					String uid="pups";
+					Node piece=new UniqueNode(label, NodeType.GERAET);
 					equipmentPieces.add(piece);
 				}	
 				equipment.get(label).add(sol);
