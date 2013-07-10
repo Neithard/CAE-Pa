@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -10,7 +12,6 @@ import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
-import com.hp.hpl.jena.query.QueryParseException;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 
@@ -41,18 +42,13 @@ public class RdfFileLoader {
 				while(results.hasNext())
 				{
 					QuerySolution sol=results.nextSolution();
-					System.out.println(sol.toString());
-					String label=sol.getLiteral("label").toString();
-	//				if(!equipment.containsKey(label))
-	//				{
-	//					equipment.put(label, new ArrayList<QuerySolution>());
-	//					
-	//					//create node
-	//					String uid="pups";
-	//					Node piece=new UniqueNode(label, NodeType.GERAET);
-	//					equipmentPieces.add(piece);
-	//				}	
-	//				equipment.get(label).add(sol);
+					//System.out.println(sol.toString());
+					String uid=sol.getLiteral("ger_uid").toString();
+					if(!equipment.containsKey(uid))
+					{
+						equipment.put(uid, new ArrayList<QuerySolution>());
+					}	
+					equipment.get(uid).add(sol);
 				}
 	
 				persons=new ArrayList<Node>();
@@ -62,32 +58,80 @@ public class RdfFileLoader {
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
 		}
 		
-		for(List<QuerySolution> sol : equipment.values())
+		Iterator<Entry<String, List<QuerySolution>>> it=equipment.entrySet().iterator();
+		while(it.hasNext())
 		{
-			queryEquipmentPiece(sol);
+			Entry<String, List<QuerySolution>> sol=it.next();
+			queryEquipmentPiece(sol.getKey(), sol.getValue());
 		}
-		
-		
-		
-
-
-		
-		
-		//queryPersons();
 	}
 	
-	private void queryEquipmentPiece(List<QuerySolution> rawPieceList)
+	private void queryEquipmentPiece(String uid, List<QuerySolution> rawPieceList)
 	{	
-		HashMap<String, List<QuerySolution>> documents=new HashMap<String, List<QuerySolution>>();
-		//Sort documents by type
-		for(QuerySolution rawDocument : rawPieceList)
+		//create node
+		String label=rawPieceList.get(0).getLiteral("label").toString() + " (" + uid + ")"; //label is present in every solution
+		UniqueNode equipmentNode=new UniqueNode(label, NodeType.GERAET, uid);
+		equipmentPieces.put(uid, equipmentNode);
+		
+		//find comment
+		for(QuerySolution sol : rawPieceList)
 		{
-			String name=rawDocument.getLiteral("typ").toString();
-			if(!documents.containsKey(name))
+			String comment=sol.getLiteral("comment").toString();
+			if(!comment.isEmpty())
 			{
-				documents.put(name, new ArrayList<QuerySolution>());
+				Node commentNode= new Node(comment,NodeType.OTHER);
+				Edge commentEdge=new Edge("comment", commentNode);
+				equipmentNode.addEdge(commentEdge);
+				break;
 			}
 		}
+		
+		//List of new documents
+		HashMap<String, List<QuerySolution>> documentLists=new HashMap<String, List<QuerySolution>>();
+		//List of docNodes for this particular piece of equipment
+		HashMap<String, UniqueNode> nodeDocs=new HashMap<String, UniqueNode>();
+		
+		//Sort documents by doc_uid
+		for(QuerySolution sol : rawPieceList)
+		{
+			String docUid=sol.getLiteral("doc_uid").toString();
+			//check if document exists
+			if(!documentLists.containsKey(docUid))
+			{
+				documentLists.put(docUid, new ArrayList<QuerySolution>());
+			}
+			documentLists.get(docUid).add(sol);
+		}
+		
+		//Associate doc nodes
+		Iterator<Entry<String, List<QuerySolution>>> it=documentLists.entrySet().iterator();
+		while(it.hasNext())
+		{
+			Entry<String, List<QuerySolution>> sol=it.next();
+			String docUid=sol.getKey();
+			if(!documents.containsKey(docUid))
+			{
+				//create doc node
+				UniqueNode document=createDocumentNode(docUid, sol.getValue());
+				documents.put(docUid, document);
+			}
+			//check if document was assciated with node
+			//doc node is definitely present at this point
+			if(!nodeDocs.containsKey(docUid))
+			{
+				UniqueNode docNode=documents.get(docUid);
+				Edge  docEdge=new Edge("hasDocument", docNode);
+				nodeDocs.put(docNode.getUid(), docNode);
+				equipmentNode.addEdge(docEdge);
+			}
+		}
+	}
+	
+	private UniqueNode createDocumentNode(String docUid, List<QuerySolution> rawDocList)
+	{
+		String name=rawDocList.get(0).getLiteral("typ").toString() + " (" + docUid + ")"; //type should be the same for every entry
+		
+		return new UniqueNode(name, NodeType.DOCUMENT, docUid);
 	}
 	
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
