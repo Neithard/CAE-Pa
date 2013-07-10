@@ -188,14 +188,6 @@
         <http://tu-dresden.de/ifa/cae/revision_number>
                 "2"^^<http://www.w3.org/2001/XMLSchema#int> .
 
-<http://tu-dresden.de/ifa/cae/A3AOUFOUWH>
-        <http://www.w3.org/2000/01/rdf-schema#comment>
-                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "L001"^^<http://www.w3.org/2001/XMLSchema#string> ;
-        <http://tu-dresden.de/ifa/cae/has_dokument>
-                <http://tu-dresden.de/ifa/cae/A3AOUG4RWH> , <http://tu-dresden.de/ifa/cae/A3AOUFK5WH> .
-
 <http://tu-dresden.de/ifa/cae/A3AOUGESWH>
         <http://www.w3.org/2000/01/rdf-schema#comment>
                 ""^^<http://www.w3.org/2001/XMLSchema#string> ;
@@ -203,6 +195,14 @@
                 "T001"^^<http://www.w3.org/2001/XMLSchema#string> ;
         <http://tu-dresden.de/ifa/cae/has_dokument>
                 <http://tu-dresden.de/ifa/cae/A3AOUGCBWH> , <http://tu-dresden.de/ifa/cae/A3AOUE42WH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFOUWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "L001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUG4RWH> , <http://tu-dresden.de/ifa/cae/A3AOUFK5WH> .
 
 <http://tu-dresden.de/ifa/cae/A3AOUGMAWH>
         <http://www.w3.org/2000/01/rdf-schema#comment>
@@ -484,12 +484,6 @@
         <http://tu-dresden.de/ifa/cae/revision_number>
                 "4"^^<http://www.w3.org/2001/XMLSchema#int> .
 
-<http://tu-dresden.de/ifa/cae/A3AOUFZ0WH>
-        <http://tu-dresden.de/ifa/cae/PDF>
-                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
-        <http://tu-dresden.de/ifa/cae/revision_number>
-                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-
 <http://tu-dresden.de/ifa/cae/A3AOVG5R7M>
         <http://tu-dresden.de/ifa/cae/PDF>
                 "S:\\comosfile\\123457\\AA\\A3AOVG5Q7M.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
@@ -513,6 +507,12 @@
                 ] ;
         <http://tu-dresden.de/ifa/cae/revision_comment>
                 "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFZ0WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
         <http://tu-dresden.de/ifa/cae/revision_number>
                 "2"^^<http://www.w3.org/2001/XMLSchema#int> .
 
