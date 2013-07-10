@@ -10,6 +10,7 @@ import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QueryParseException;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 
@@ -31,33 +32,33 @@ public class RdfFileLoader {
 		//create new Query
 		try{
 			Model model=FileManager.get().loadModel(sourceFile);
-			
-			Query query= QueryFactory.create(queryString);
-			QueryExecution qExec=QueryExecutionFactory.create(query,model);
-			
-			ResultSet results=qExec.execSelect();
-			//sort equipment
-			while(results.hasNext())
-			{
-				QuerySolution sol=results.nextSolution();
-				System.out.println(sol.toString());
-				String label=sol.getLiteral("label").toString();
+			//try {
+				Query query= QueryFactory.create(queryString);
+				QueryExecution qExec=QueryExecutionFactory.create(query,model);
 				
-				if(!equipment.containsKey(label))
+				ResultSet results=qExec.execSelect();
+				//sort equipment
+				while(results.hasNext())
 				{
-					equipment.put(label, new ArrayList<QuerySolution>());
-					
-					//create node
-					String uid="pups";
-					Node piece=new UniqueNode(label, NodeType.GERAET);
-					equipmentPieces.add(piece);
-				}	
-				equipment.get(label).add(sol);
-			}
-
-			persons=new ArrayList<Node>();
-			companies=new ArrayList<Node>();
-		} catch (Exception e) {
+					QuerySolution sol=results.nextSolution();
+					System.out.println(sol.toString());
+					String label=sol.getLiteral("label").toString();
+	//				if(!equipment.containsKey(label))
+	//				{
+	//					equipment.put(label, new ArrayList<QuerySolution>());
+	//					
+	//					//create node
+	//					String uid="pups";
+	//					Node piece=new UniqueNode(label, NodeType.GERAET);
+	//					equipmentPieces.add(piece);
+	//				}	
+	//				equipment.get(label).add(sol);
+				}
+	
+				persons=new ArrayList<Node>();
+				companies=new ArrayList<Node>();
+		}	catch (Exception e) {
+			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
 		}
 		
@@ -92,18 +93,21 @@ public class RdfFileLoader {
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
 			"	PREFIX cae: <http://tu-dresden.de/ifa/cae/>   " + 
 			"	    " + 
-			"	SELECT  ?label ?typ ?project_number ?job_number ?revision_number    " + 
+			"	SELECT  ?label ?typ ?project_number ?comment ?job_number ?revision_number    " + 
 			"	        ?revision_comment ?PDF ?ch_name ?ch_date ?cr_name ?cr_date  " + 
 			"	        ?re_name ?re_date  ?company_name  ?email_adress  ?telephone_number   " + 
-			"	        ?firm_location  ?firm_zip  ?firm_street   " + 
+			"	        ?firm_location  ?firm_zip  ?firm_street  ?ger_uid ?doc_uid " + 
 			"   " + 
 			"					    WHERE {   " + 
 			"					           ?gereat    cae:has_dokument  ?dokument;   " + 
+			"										 rdfs:comment      ?comment;  " +
+            "										  cae:uid           ?ger_uid; " +
 			"					                      rdfs:label        ?label.   " + 
 			"   " + 
 			"					           ?dokument   cae:typ            ?typ;   " + 
 			"					                       cae:project_number ?project_number;   " + 
-			"					                       cae:job_number     ?job_number.   " + 
+			"					                       cae:job_number     ?job_number;   " + 
+			"                                          cae:uid            ?doc_uid."  +
 			"					           ?dokument   cae:has_revision   ?revision.    " + 
 			"   " + 
 			"					           ?revision  cae:revision_number ?revision_number;   " + 
@@ -132,6 +136,6 @@ public class RdfFileLoader {
 "					                        cae:firm_zip ?firm_zip;   " + 
 "					                        cae:firm_street ?firm_street.  }   " + 
 "   " + 
-"					    FILTER regex(?label,\"P001\")   " + 
+"					        FILTER regex(?ger_uid,\"A3AOUEE6WH\")  " + 
 "					    }";
 }
