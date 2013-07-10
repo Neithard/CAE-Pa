@@ -187,6 +187,7 @@ public class RdfFileLoader {
 		 * There might be several results for one revision, but their information (for this context) is the same.
 		 */
 		Set<String> revNumbers= new HashSet<String>();
+		MakeRevNodeReturnType newestRevision;
 		for(QuerySolution revSol : rawDocList)
 		{
 			String revisionNr=revSol.getLiteral("revision_number").toString();
@@ -195,7 +196,26 @@ public class RdfFileLoader {
 				revNumbers.add(revisionNr);
 				MakeRevNodeReturnType revNode=makeRevisionNode(revSol);
 				docNode.addEdge(new Edge("hasRev", revNode.getNode()));
+				
+				if(revNode.getDate() != "")
+				{
+					if(newestRevision != null)
+					{
+						if(new Double(newestRevision.getDate().replace("," , "."))
+								< new Double(revNode.getDate().replace(",", ".")))
+						{
+							newestRevision=revNode;
+						}
+					} else newestRevision=revNode;
+				}
+				
 			}
+		}
+		
+		//set newest Revision node if there is one
+		if(newestRevision != null)
+		{
+			newestRevision.getNode().setType(NodeType.CURRENTREVISION);
 		}
 		return docNode;
 	}
