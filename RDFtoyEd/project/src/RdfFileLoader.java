@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -25,13 +26,30 @@ public class RdfFileLoader {
 	private HashMap<String, UniqueNode> companies;
 	private HashMap<String, UniqueNode> equipmentPieces;
 	private HashMap<String, UniqueNode> documents;
+		
+	public Collection<UniqueNode> getCompanies()
+	{
+		return companies.values();
+	}
 	
+	public Collection<Node> getPersons()
+	{
+		return persons.values();
+	}
 	
-	private HashMap<String, List<QuerySolution>> equipment;
+	public Collection<UniqueNode> getEquipment()
+	{
+		return equipmentPieces.values();
+	}
+	
+	public Collection<UniqueNode> getDocuments()
+	{
+		return documents.values();
+	}
 
 	public RdfFileLoader(String sourceFile) throws IllegalArgumentException
 	{
-		equipment= new HashMap<String, List<QuerySolution>>();
+		HashMap<String, List<QuerySolution>> equipment= new HashMap<String, List<QuerySolution>>();
 		//create new Query
 		try{
 			Model model=FileManager.get().loadModel(sourceFile);

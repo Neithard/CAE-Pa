@@ -23,6 +23,8 @@ public class Node extends NamedGraphElement {
 	public void addEdge(Edge e)
 	{
 		edges.add(e);
+		System.out.println("New Edge: " + this.name.toString()  + " " + e.name + " " + e.getTarget().getName());
+
 	}
 
 
