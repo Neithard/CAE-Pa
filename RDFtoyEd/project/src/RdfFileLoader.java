@@ -41,7 +41,12 @@ public class RdfFileLoader {
 			QueryExecution qExec=QueryExecutionFactory.create(query,model);
 			
 			results=qExec.execSelect();
-			System.out.print(results.toString());
+			while(results.hasNext())
+			{
+				QuerySolution sol=results.nextSolution();
+				System.out.println(sol.toString());
+			}
+			
 			
 			persons=new ArrayList<Node>();
 			companies=new ArrayList<Node>();
@@ -56,25 +61,7 @@ public class RdfFileLoader {
 		//queryPersons();
 	}
 	
-	/*
-	 * Create Person Nodes
-	 */
-//	private void queryPersons()
-//	{
-//		//ResIterator iter = model.listSubjectsWithProperty(VCARD.FN);
-//		while(iter.hasNext()) {
-//			Resource r= iter.nextResource();
-//			if(r.hasProperty(VCARD.N))
-//			{
-//				r=r.getProperty(VCARD.N).getResource();
-//
-//				
-//				String name=r.getProperty(VCARD.NAME).getObject().asLiteral().getValue().toString();
-//				name=name + " " +  r.getProperty(VCARD.Family).getObject().asLiteral().getValue().toString();
-//				persons.add(new Node(name, NodeType.PERSON));
-//			}
-//		}
-//	}
+
 	
 	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
 			"	PREFIX cae: <http://tu-dresden.de/ifa/cae/>   " + 
