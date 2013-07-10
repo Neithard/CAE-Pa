@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
@@ -178,6 +180,13 @@ public class RdfFileLoader {
 		docNode.addEdge(new Edge("jobNumber",
 				new Node(sol.getLiteral("job_number").toString(), NodeType.OTHER)));
 		
+		/*
+		 * Now we create the Revision nodes
+		 * 
+		 * revisions for a document can be uniquely identified by their revision_number
+		 * There might be several results for one revision, but their information (for this context) is the same.
+		 */
+		Set<String> revNumbers= new HashSet<String>();
 		
 		
 		return docNode;
