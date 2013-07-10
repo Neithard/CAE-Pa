@@ -94,6 +94,19 @@ public class XmlWriter {
 				graph.setAttribute("id", "G");
 				rootElement.appendChild(graph);
 				
+				//svg data
+				Element data=doc.createElement("data");
+				data.setAttribute("key", "d0");
+				rootElement.appendChild(data);
+				
+				Element resources=doc.createElement("y:Resources");
+				data.appendChild(resources);
+				
+				Element svgEl1=doc.createElement("y:Resource");
+				svgEl1.setAttribute("id", "1");
+				svgEl1.setTextContent(personNodeSvg);
+				resources.appendChild(svgEl1);
+				
 				/*
 				 * generated Part
 				 */
@@ -177,23 +190,49 @@ public class XmlWriter {
 	private Element makePersonElement(Node personNode)
 	{
 		Element personElement=doc.createElement("node");
+		personElement.setAttribute("id", nodeIdChar + personNode.getId() );
 		Element k1=doc.createElement("data");
 		k1.setAttribute("key", "d6");
 		personElement.appendChild(k1);
 		
-		Element k2= doc.createElement("data");
-		k2.setAttribute("key", "d6");
-		
 		Element svg=doc.createElement("y:SVGNode");
-		k2.appendChild(svg);
+		k1.appendChild(svg);
 		Element geom=doc.createElement("y:Geometry");
 		geom.setAttribute("x", "0.0");
 		geom.setAttribute("y", "0.0");
-		geom.setAttribute("width", "0.0");
-		geom.setAttribute("height", "0.0");		
+		geom.setAttribute("width", "19.0");
+		geom.setAttribute("height", "49.0");
+		svg.appendChild(geom);
+		
+		Element fill=doc.createElement("y:Fill");
+		fill.setAttribute("color", "#CCCFF");
+		fill.setAttribute("transparent", "false");
+		svg.appendChild(fill);
+		
+		
+		Element borderStyleElement=doc.createElement("y:BorderStyle");
+		borderStyleElement.setAttribute("color", "#000000");
+		borderStyleElement.setAttribute("type", "line");
+		borderStyleElement.setAttribute("width", "1.0");
+		svg.appendChild(borderStyleElement);
+		
+		svg.appendChild(makeNodeLabel(personNode.getName()));
+		
+		Element svgProp=doc.createElement("y:SVGNodeProperties");
+		svgProp.setAttribute("usingVisualBounds", "true");
+		svg.appendChild(svgProp);
+		
+		Element svgModel=doc.createElement("y:SVGModel");
+		svgModel.setAttribute("svgBoundsPolicy", "0");
+		svg.appendChild(svgModel);
+		
+		Element svgContent=doc.createElement("y:SVGContent");
+		svgContent.setAttribute("refid", "1");
+		svgModel.appendChild(svgContent);
 		
 		return personElement;
 	}
+	
 	
 	private Element makeEquipmentPieceElement(Node equiNode)
 	{
@@ -256,35 +295,5 @@ public class XmlWriter {
 		return e;
 	}
 	
-	private String personNodeSvg="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> " +
-			"<!-- Created with Inkscape (http://www.inkscape.org/) --> <svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\"" +
-			" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"" +
-			" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://" +
-			"sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inksc" +
-			"ape\" width=\"19.78125\" height=\"49.865517\" id=\"svg2\" version=\"1.1\" inkscape:version=\"0.48.4 r99" +
-			"39\" sodipodi:docname=\"drawing.svg,.svg\"> <defs id=\"defs4\" /> <sodipodi:namedview id=\"base\" pagec" +
-			"olor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1.0\" inkscape:pageopacity=\"0.0\" inkscape:pa" +
-			"geshadow=\"2\" inkscape:zoom=\"1.4\" inkscape:cx=\"-53.278929\" inkscape:cy=\"170.01595\" inkscape:docu" +
-			"ment-units=\"px\" inkscape:current-layer=\"layer1\" showgrid=\"false\" fit-margin-top=\"0\" fit-margin-" +
-			"left=\"0\" fit-margin-right=\"0\" fit-margin-bottom=\"0\" inkscape:window-width=\"1920\" inkscape:window-" +
-			"height=\"1025\" inkscape:window-x=\"-2\" inkscape:window-y=\"-3\" inkscape:window-maximized=\"1\" /> <met" +
-			"adata id=\"metadata7\"> <rdf:RDF> <cc:Work rdf:about=\"\"> <dc:format>image/svg+xml</dc:format> <dc:type " +
-			"rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" /> <dc:title></dc:title> </cc:Work> </rdf:RDF> </" +
-			"metadata> <g inkscape:label=\"Layer 1\" inkscape:groupmode=\"layer\" id=\"layer1\" transform=\"translate(" +
-			"-141.15625,-457.54073)\"> <path sodipodi:type=\"arc\" style=\"fill:#000000;fill-opacity:1;stroke:none\" i" +
-			"d=\"path2989\" sodipodi:cx=\"247.14285\" sodipodi:cy=\"213.43361\" sodipodi:rx=\"70\" sodipodi:ry=\"69.64" +
-			"286\" d=\"m 317.14285,213.43361 c 0,38.46269 -31.34006,69.64286 -70,69.64286 -38.65993,0 -70,-31.18017 -7" +
-			"0,-69.64286 0,-38.46269 31.34007,-69.64286 70,-69.64286 38.65994,0 70,31.18017 70,69.64286 z\" transform=" +
-			"\"matrix(0.13745706,0,0,0.13745706,117.28401,437.77568)\" /> <path style=\"fill:none;stroke:#000000;strok" +
-			"e-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-" +
-			"dasharray:none\" d=\"m 151.25555,474.13376 -0.14734,26.70594\" id=\"path3783\" inkscape:connector-curvatu" +
-			"re=\"0\" /> <path style=\"fill:none;stroke:#000000;stroke-width:2.06185627;stroke-linecap:butt;stroke-lin" +
-			"ejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none\" d=\"m 151.20643,500.49606 -9.523" +
-			"8,5.74375\" id=\"path3785\" inkscape:connector-curvature=\"0\" /> <path style=\"fill:none;stroke:#000000;" +
-			"stroke-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;st" +
-			"roke-dasharray:none\" d=\"m 150.86279,500.76606 9.52381,5.74375\" id=\"path3785-6\" inkscape:connector-cu" +
-			"rvature=\"0\" inkscape:transform-center-x=\"-1.7182004\" /> <path style=\"fill:none;stroke:#000000;stroke" +
-			"-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-" +
-			"dasharray:none\" d=\"m 160.92662,485.42488 -19.53854,0\" id=\"path3805\" inkscape:connector-curvature=\"" +
-			"0\" /> </g> </svg>";
+	private String personNodeSvg="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <!-- Created with Inkscape (http://www.inkscape.org/) --> <svg xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\" width=\"19.78125\" height=\"49.865517\" id=\"svg2\" version=\"1.1\" inkscape:version=\"0.48.4 r9939\" sodipodi:docname=\"drawing.svg,.svg\"> <defs id=\"defs4\" /> <sodipodi:namedview id=\"base\" pagecolor=\"#ffffff\" bordercolor=\"#666666\" borderopacity=\"1.0\" inkscape:pageopacity=\"0.0\" inkscape:pageshadow=\"2\" inkscape:zoom=\"1.4\" inkscape:cx=\"-53.278929\" inkscape:cy=\"170.01595\" inkscape:document-units=\"px\" inkscape:current-layer=\"layer1\" showgrid=\"false\" fit-margin-top=\"0\" fit-margin-left=\"0\" fit-margin-right=\"0\" fit-margin-bottom=\"0\" inkscape:window-width=\"1920\" inkscape:window-height=\"1025\" inkscape:window-x=\"-2\" inkscape:window-y=\"-3\" inkscape:window-maximized=\"1\" /> <metadata id=\"metadata7\"> <rdf:RDF> <cc:Work rdf:about=\"\"> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" /> <dc:title></dc:title> </cc:Work> </rdf:RDF> </metadata> <g inkscape:label=\"Layer 1\" inkscape:groupmode=\"layer\" id=\"layer1\" transform=\"translate(-141.15625,-457.54073)\"> <path sodipodi:type=\"arc\" style=\"fill:#000000;fill-opacity:1;stroke:none\" id=\"path2989\" sodipodi:cx=\"247.14285\" sodipodi:cy=\"213.43361\" sodipodi:rx=\"70\" sodipodi:ry=\"69.64286\" d=\"m 317.14285,213.43361 c 0,38.46269 -31.34006,69.64286 -70,69.64286 -38.65993,0 -70,-31.18017 -70,-69.64286 0,-38.46269 31.34007,-69.64286 70,-69.64286 38.65994,0 70,31.18017 70,69.64286 z\" transform=\"matrix(0.13745706,0,0,0.13745706,117.28401,437.77568)\" /> <path style=\"fill:none;stroke:#000000;stroke-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none\" d=\"m 151.25555,474.13376 -0.14734,26.70594\" id=\"path3783\" inkscape:connector-curvature=\"0\" /> <path style=\"fill:none;stroke:#000000;stroke-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none\" d=\"m 151.20643,500.49606 -9.5238,5.74375\" id=\"path3785\" inkscape:connector-curvature=\"0\" /> <path style=\"fill:none;stroke:#000000;stroke-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none\" d=\"m 150.86279,500.76606 9.52381,5.74375\" id=\"path3785-6\" inkscape:connector-curvature=\"0\" inkscape:transform-center-x=\"-1.7182004\" /> <path style=\"fill:none;stroke:#000000;stroke-width:2.06185627;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none\" d=\"m 160.92662,485.42488 -19.53854,0\" id=\"path3805\" inkscape:connector-curvature=\"0\" /> </g> </svg>";
 }
