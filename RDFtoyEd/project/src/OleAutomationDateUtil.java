@@ -1,7 +1,7 @@
 import java.util.TimeZone;
 import java.util.Date;
 import java.util.Calendar;
-
+//slightly modified  from https://github.com/mt/oadate-java/blob/master/src/OleAutomationDateUtil.java
 public class OleAutomationDateUtil {
     
     private static long ONE_DAY = 24L * 60 * 60 * 1000;
