@@ -103,6 +103,17 @@ public class XmlWriter {
 					graph.appendChild(makeDocumentElement(n));
 				}
 				
+				//append the company elements
+				for(Node n : rdf.getCompanies())
+				{
+					graph.appendChild(makeCompanyElement(n));
+				}
+
+				//append the equipment elements
+				for(Node n : rdf.getEquipment())
+				{
+					graph.appendChild(makeEquipmentPieceElement(n));
+				}
 				
 				
 				// write the content into xml file
@@ -150,31 +161,23 @@ public class XmlWriter {
 		return keyElement;
 	}
 	
+	private Element makeCompanyElement(Node compNode)
+	{
+		Element compElement=makeGenericElement(compNode);
+		
+		return compElement;
+	}
+	
+	private Element makeEquipmentPieceElement(Node equiNode)
+	{
+		Element equElement=makeGenericElement(equiNode);
+		
+		return equElement;
+	}
+	
 	private Element makeDocumentElement(Node docNode)
 	{
-		Element docElement=doc.createElement("node");
-		docElement.setAttribute("id", nodeIdChar + docNode.getId());
-		
-		Element dataElement=doc.createElement("data");
-		dataElement.setAttribute("key", "d6");
-		docElement.appendChild(dataElement);
-		
-		Element genNodeElement=doc.createElement("y:GenericNode");
-		genNodeElement.setAttribute("configuration", "BevelNodeWithShadow");
-		dataElement.appendChild(genNodeElement);
-		
-		Element fillElement=doc.createElement("y:Fill");
-		fillElement.setAttribute("color", "#FF9900");
-		fillElement.setAttribute("transparent", "false");
-		genNodeElement.appendChild(fillElement);
-		
-		Element borderStyleElement=doc.createElement("y:BorderStyle");
-		borderStyleElement.setAttribute("hasColor", "false");
-		borderStyleElement.setAttribute("type", "line");
-		borderStyleElement.setAttribute("width", "1.0");
-		genNodeElement.appendChild(borderStyleElement);
-		
-		genNodeElement.appendChild(makeNodeLabel(docNode.getName()));
+		Element docElement=makeGenericElement(docNode);
 		
 		return docElement;
 	}
@@ -197,4 +200,32 @@ public class XmlWriter {
 		return label;
 	}
 	  
+	private Element makeGenericElement(Node node)
+	{
+		Element e=doc.createElement("node");
+		e.setAttribute("id", nodeIdChar + node.getId());
+		
+		Element dataElement=doc.createElement("data");
+		dataElement.setAttribute("key", "d6");
+		e.appendChild(dataElement);
+		
+		Element genNodeElement=doc.createElement("y:GenericNode");
+		genNodeElement.setAttribute("configuration", "BevelNodeWithShadow");
+		dataElement.appendChild(genNodeElement);
+		
+		Element fillElement=doc.createElement("y:Fill");
+		fillElement.setAttribute("color", "#FF9900");
+		fillElement.setAttribute("transparent", "false");
+		genNodeElement.appendChild(fillElement);
+		
+		Element borderStyleElement=doc.createElement("y:BorderStyle");
+		borderStyleElement.setAttribute("hasColor", "false");
+		borderStyleElement.setAttribute("type", "line");
+		borderStyleElement.setAttribute("width", "1.0");
+		genNodeElement.appendChild(borderStyleElement);
+		
+		genNodeElement.appendChild(makeNodeLabel(node.getName()));
+		
+		return e;
+	}
 }
