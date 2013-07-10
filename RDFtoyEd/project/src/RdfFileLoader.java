@@ -129,8 +129,10 @@ public class RdfFileLoader {
 	
 	private UniqueNode createDocumentNode(String docUid, List<QuerySolution> rawDocList)
 	{
+		QuerySolution sol=rawDocList.get(0);//arbitrary solution from List
+		
 		//build node
-		String name=rawDocList.get(0).getLiteral("typ").toString() + " (" + docUid + ")"; //type should be the same for every entry
+		String name=sol.getLiteral("typ").toString() + " (" + docUid + ")"; //type should be the same for every entry
 		UniqueNode docNode=new UniqueNode(name, NodeType.DOCUMENT, docUid);
 		
 		/*
@@ -139,7 +141,6 @@ public class RdfFileLoader {
 		 * this should be trivial because we find this information in all of the provided
 		 * QuerySolutions if it exists
 		 */
-		QuerySolution sol=rawDocList.get(0);
 		if(sol.contains("comp_uid"))
 		{
 			String comp_uid=sol.getLiteral("comp_uid").toString();
@@ -168,9 +169,16 @@ public class RdfFileLoader {
 				
 				companies.put(comp_uid, newCompanyNode);
 			}
-			Node companyNode= companies.get(comp_uid);
-
+			docNode.addEdge(new Edge("company", companies.get(comp_uid)));
 		}
+		//project number is the same for every solution too
+		docNode.addEdge(new Edge("projectNumber",
+						new Node(sol.getLiteral("project_number").toString(), NodeType.OTHER)));
+		//also job_number
+		docNode.addEdge(new Edge("jobNumber",
+				new Node(sol.getLiteral("job_number").toString(), NodeType.OTHER)));
+		
+		
 		
 		return docNode;
 	}
