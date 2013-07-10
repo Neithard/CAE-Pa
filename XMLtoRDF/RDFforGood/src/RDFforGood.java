@@ -57,6 +57,9 @@ public class RDFforGood {
 				Property firm_zip = model.createProperty(namepsace, "firm_zip");
 				Property firm_street = model.createProperty(namepsace, "firm_street");
 				
+				//UID
+				Property uid = model.createProperty(namepsace, "uid");
+				
 				//************  Object Property   ************
 				//SubProperty Of "has"
 				Property has_dokument = model.createProperty(namepsace, "has_dokument");
@@ -94,6 +97,9 @@ public class RDFforGood {
 							//Jena Resource erstellen
 							//Property dokument_property = model.createProperty(namepsace, RuI.getAttribute("UID"));
 							Resource Dokument = model.createResource(namepsace + RuI.getAttribute("UID"));
+							
+							// UID hinzufügen
+							Dokument.addLiteral(uid, RuI.getAttribute("UID"));
 								
 							//Dokument Literal -- hinzufügen
 							Dokument.addLiteral(typ, RuI.getAttribute("Beschreibung"));
@@ -143,6 +149,9 @@ public class RDFforGood {
 										
 										//Revisionsknoten erstellen --- die UID des ersten Revisionskonten wird als Revisions-UID genommen
 										Resource revision = model.createResource(namepsace + eRevision.getAttribute("UID"));
+										
+										// UID hinzufügen
+										revision.addLiteral(uid, eRevision.getAttribute("UID"));
 										
 										//Revision an Dokument anhängen
 										Dokument.addProperty(has_revision, revision);
@@ -225,6 +234,9 @@ public class RDFforGood {
 										//Firm Resource erstellen
 										Resource rFirm = model.createResource(namepsace + eAtt.getAttribute("UID"));
 										
+										// UID hinzufügen
+										rFirm.addLiteral(uid, eAtt.getAttribute("UID"));
+										
 										//Firma an Dokument Anhängen
 										Dokument.addProperty(has_firm, rFirm);
 										
@@ -298,6 +310,9 @@ public class RDFforGood {
 					//Geräte Resource erzeugen
 					Resource rGeraetResource = model.createResource(namepsace + tmp_Geraet.getUid());
 					
+					// UID hinzufügen
+					rGeraetResource.addLiteral(uid, tmp_Geraet.getUid());
+					
 					//Name hinzufügen
 					rGeraetResource.addLiteral(RDFS.label, tmp_Geraet.getName());
 					
@@ -319,6 +334,17 @@ public class RDFforGood {
 		        	 System.out.println("Fehler");
 		         }
 		        
+		        fileName = "Turtle.ttf";
+		        try {
+		        	out = new FileWriter( fileName );
+		            model.write( out, "Turtle" );
+
+		               out.close();
+		               System.out.println("Datei Abgelegt");
+		           }
+		         catch (Exception closeException) {
+		        	 System.out.println("Fehler");
+		         }
 				
 	}
 		
