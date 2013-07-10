@@ -45,7 +45,7 @@ public class RdfFileLoader {
 				{
 					QuerySolution sol=results.nextSolution();
 					//System.out.println(sol.toString());
-					String uid=sol.getLiteral("ger_uid").toString();
+					String uid=sol.getLiteral("ger_uid").getValue().toString();
 					if(!equipment.containsKey(uid))
 					{
 						equipment.put(uid, new ArrayList<QuerySolution>());
@@ -71,14 +71,14 @@ public class RdfFileLoader {
 	private void queryEquipmentPiece(String uid, List<QuerySolution> rawPieceList)
 	{	
 		//create node
-		String label=rawPieceList.get(0).getLiteral("label").toString() + " (" + uid + ")"; //label is present in every solution
+		String label=rawPieceList.get(0).getLiteral("label").getValue().toString() + " (" + uid + ")"; //label is present in every solution
 		UniqueNode equipmentNode=new UniqueNode(label, NodeType.GERAET, uid);
 		equipmentPieces.put(uid, equipmentNode);
 		
 		//find comment
 		for(QuerySolution sol : rawPieceList)
 		{
-			String comment=sol.getLiteral("comment").toString();
+			String comment=sol.getLiteral("comment").getValue().toString();
 			if(!comment.isEmpty())
 			{
 				Node commentNode= new Node(comment,NodeType.OTHER);
@@ -96,7 +96,7 @@ public class RdfFileLoader {
 		//Sort documents by doc_uid
 		for(QuerySolution sol : rawPieceList)
 		{
-			String docUid=sol.getLiteral("doc_uid").toString();
+			String docUid=sol.getLiteral("doc_uid").getValue().toString();
 			//check if document exists
 			if(!documentLists.containsKey(docUid))
 			{
@@ -134,7 +134,7 @@ public class RdfFileLoader {
 		QuerySolution sol=rawDocList.get(0);//arbitrary solution from List
 		
 		//build node
-		String name=sol.getLiteral("typ").toString() + " (" + docUid + ")"; //type should be the same for every entry
+		String name=sol.getLiteral("typ").getValue().toString() + " (" + docUid + ")"; //type should be the same for every entry
 		UniqueNode docNode=new UniqueNode(name, NodeType.DOCUMENT, docUid);
 		
 		/*
@@ -145,26 +145,26 @@ public class RdfFileLoader {
 		 */
 		if(sol.contains("comp_uid"))
 		{
-			String comp_uid=sol.getLiteral("comp_uid").toString();
+			String comp_uid=sol.getLiteral("comp_uid").getValue().toString();
 			if(!companies.containsKey(comp_uid))
 			{
 				//Company Node itself
-				UniqueNode newCompanyNode= new UniqueNode(sol.getLiteral("company_name").toString() + " (" + comp_uid + ")",
+				UniqueNode newCompanyNode= new UniqueNode(sol.getLiteral("company_name").getValue().toString() + " (" + comp_uid + ")",
 						NodeType.COMPANY, 
 						comp_uid);
 				//EMail - mandatory
-				Node compEmail=new Node(sol.getLiteral("email_adress").toString(), NodeType.EMAIL);
+				Node compEmail=new Node(sol.getLiteral("email_adress").getValue().toString(), NodeType.EMAIL);
 				newCompanyNode.addEdge(new Edge("eMail", compEmail));
 				//Telephone - mandatory
-				Node compPhone= new Node(sol.getLiteral("telephone_number").toString(), NodeType.PHONE);
+				Node compPhone= new Node(sol.getLiteral("telephone_number").getValue().toString(), NodeType.PHONE);
 				newCompanyNode.addEdge(new Edge("phone", compPhone));
 				//Street Address - optional
 				if(sol.contains("firm_zip"))
 				{
 					//Address
-					String comp_address=sol.getLiteral("firm_street").toString() + "\n" +
-										sol.getLiteral("firm_zip").toString() + " " +
-										sol.getLiteral("firm_location");
+					String comp_address=sol.getLiteral("firm_street").getValue().toString() + "\n" +
+										sol.getLiteral("firm_zip").getValue().toString() + " " +
+										sol.getLiteral("firm_location").getValue().toString();
 					newCompanyNode.addEdge(new Edge("address",
 							               new Node(comp_address,NodeType.ADDRESS)));
 				}
@@ -175,10 +175,10 @@ public class RdfFileLoader {
 		}
 		//project number is the same for every solution too
 		docNode.addEdge(new Edge("projectNumber",
-						new Node(sol.getLiteral("project_number").toString(), NodeType.OTHER)));
+						new Node(sol.getLiteral("project_number").getValue().toString(), NodeType.OTHER)));
 		//also job_number
 		docNode.addEdge(new Edge("jobNumber",
-				new Node(sol.getLiteral("job_number").toString(), NodeType.OTHER)));
+				new Node(sol.getLiteral("job_number").getValue().toString(), NodeType.OTHER)));
 		
 		/*
 		 * Now we create the Revision nodes
@@ -190,7 +190,7 @@ public class RdfFileLoader {
 		MakeRevNodeReturnType newestRevision;
 		for(QuerySolution revSol : rawDocList)
 		{
-			String revisionNr=revSol.getLiteral("revision_number").toString();
+			String revisionNr=revSol.getLiteral("revision_number").getValue().toString();
 			if(!revNumbers.contains(revisionNr))
 			{
 				revNumbers.add(revisionNr);
@@ -226,7 +226,7 @@ public class RdfFileLoader {
 	 */
 	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
 	{
-		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").toString(), NodeType.REVISION);
+		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString(), NodeType.REVISION);
 		
 		//created - optional
 		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
@@ -242,14 +242,14 @@ public class RdfFileLoader {
 	{
 		if(sol.contains(revPrefix + "_date"))
 		{
-			String date = sol.getLiteral(revPrefix + "_date").toString();
+			String date = sol.getLiteral(revPrefix + "_date").getValue().toString();
 			Node blankNode = new Node("", NodeType.EMPTY);
 			
 			blankNode.addEdge(new Edge("date",
 							  new Node(date, NodeType.DATE)));
 			
 			//check if Person exists
-			String personName=sol.getLiteral(revPrefix + "_name").toString();
+			String personName=sol.getLiteral(revPrefix + "_name").getValue().toString();
 			if(!persons.containsKey(personName))
 			{
 				persons.put(personName, new Node(personName, NodeType.PERSON));
