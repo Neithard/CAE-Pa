@@ -19,6 +19,7 @@ import org.w3c.dom.Element;
 public class XmlWriter {
 	private Document doc;
 	private static final String nodeIdChar="n";
+	private static final String edgeIdChar="e";
 	DocumentBuilder docBuilder;
 	DocumentBuilderFactory docFactory;
 	
@@ -115,47 +116,56 @@ public class XmlWriter {
 				for(Node n : rdf.getDocuments())
 				{
 					graph.appendChild(makeDocumentElement(n));
+					makeEdges(graph, n);
 				}
 				
 				//append the company elements
 				for(Node n : rdf.getCompanies())
 				{
 					graph.appendChild(makeCompanyElement(n));
+					makeEdges(graph, n);					
 				}
 
 				//append the equipment elements
 				for(Node n : rdf.getEquipment())
 				{
 					graph.appendChild(makeEquipmentPieceElement(n));
+					makeEdges(graph, n);					
 				}
 				
 				//append the person elements
 				for(Node n : rdf.getPersons())
 				{
 					graph.appendChild(makePersonElement(n));
+					makeEdges(graph, n);					
 				}
 				
 				//append the mail elements
 				for(Node n : rdf.getMail())
 				{
 					graph.appendChild(makeMailelement(n));
+					makeEdges(graph, n);					
 				}
 				
 				//append the phone elements
 				for(Node n : rdf.getPhones())
 				{
 					graph.appendChild(makePhoneElement(n));
+					makeEdges(graph, n);					
 				}
 				//append empty nodes
 				for(Node n : rdf.getEmpty())
 				{
 					graph.appendChild(makeEmptyElement(n));
+					makeEdges(graph, n);					
 				}
 				//append rest
 				for(Node n : rdf.getOther())
 				{
 					graph.appendChild(makeGenericElement(n));
+					makeEdges(graph, n);					
 				}
+				
 				
 				
 				// write the content into xml file
@@ -183,6 +193,53 @@ public class XmlWriter {
 			  } catch (TransformerException tfe) {
 				tfe.printStackTrace();
 			  }
+	}
+	
+	private void makeEdges(Element element, Node n)
+	{
+		for(Edge e : n.getEdges())
+		{
+			element.appendChild(makeEdge(n, e));
+		}
+	}
+	
+	private Element makeEdge(Node start, Edge e)
+	{
+		Element edgeNode=doc.createElement("edge");
+		edgeNode.setAttribute("id", edgeIdChar + e.getId());
+		edgeNode.setAttribute("source", nodeIdChar + start.getId());
+		edgeNode.setAttribute("target", nodeIdChar + e.getTarget().getId());
+		
+		Element key=doc.createElement("data");
+		key.setAttribute("key", "d9");
+		edgeNode.appendChild(key);
+		
+		Element label=doc.createElement("y:EdgeLabel");
+		key.appendChild(doc.createElement("y:ArcEdge")).appendChild(label);
+//		label.setAttribute("alignment", "center");
+//		label.setAttribute("configuration", "AutoFlippingLabel");
+//		label.setAttribute("fontFamily", "Dialog");
+//		label.setAttribute("fontSize", "12");
+//		label.setAttribute("fontStyle", "plain");
+//		label.setAttribute("hasBackgroundColor", "false");
+//		label.setAttribute("hasLineColor", "false");
+//		label.setAttribute("modelName", "custom");
+//		label.setAttribute("textColor", "#000000");
+//		label.setAttribute("preferredPlacement", "anywhere");		
+//		label.setAttribute("ratio", "0.5");
+//		label.setAttribute("height", "20");		
+//		label.setAttribute("width", "20");				
+//		label.setAttribute("visible", "true");
+		label.setTextContent(e.getName());
+		
+		Element desc=doc.createElement("y:PreferredPlacementDescriptor");
+		label.appendChild(desc);
+		desc.setAttribute("angle", "0.0");
+		desc.setAttribute("angleReference", "absolute");		
+		desc.setAttribute("angle", "0.0");		
+		
+		
+		return edgeNode;
 	}
 	
 	private  Element makeKeyElement(int idNum, String type,  String forStr)
