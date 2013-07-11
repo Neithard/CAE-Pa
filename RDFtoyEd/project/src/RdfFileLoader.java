@@ -9,7 +9,6 @@ import java.util.Map.Entry;
 
 
 import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.reasoner.rulesys.builtins.Regex;
 import com.hp.hpl.jena.util.FileManager;
 
 import com.hp.hpl.jena.query.Query;
@@ -314,11 +313,11 @@ public class RdfFileLoader {
 			if(!revNumbers.contains(revisionNr))
 			{
 				revNumbers.add(revisionNr);
-				MakeRevNodeReturnType revNode=makeRevisionNode(revSol);
-				docNode.addEdge(new Edge("hasRev", revNode.getNode()));
+				Node revNode=makeRevisionNode(revSol);
+				docNode.addEdge(new Edge("hasRev", revNode));
 				
 				Node pdfNode= new Node(revSol.getLiteral("PDF").getValue().toString());
-				revNode.getNode().addEdge(new Edge("pdf", pdfNode));
+				revNode.addEdge(new Edge("pdf", pdfNode));
 				pdfNodes.add(pdfNode);
 				
 			}
@@ -330,18 +329,18 @@ public class RdfFileLoader {
 	 * to compare the Revision's dates we return the Value of the Date String,
 	 * if the String is empty no date could be found;
 	 */
-	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
+	private Node makeRevisionNode(QuerySolution sol)
 	{
 		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString());
 		revisions.add(revNode);
 		//created - optional
-		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
+		maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
 		//checked - optional
 		maybeMakeRevisionStepNode(revNode, sol, "ch", "checked");	
 		//released - optional
 		maybeMakeRevisionStepNode(revNode, sol, "re", "released");
 		
-		return new MakeRevNodeReturnType(cr_date, revNode);
+		return  revNode;
 	}
 	
 	private String maybeMakeRevisionStepNode(Node parentNode, QuerySolution sol, String revPrefix, String edgeName)
