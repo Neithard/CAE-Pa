@@ -31,7 +31,8 @@ public class RdfFileLoader {
 	private List<Node> emptyNodes;
 	private List<Node> phoneNodes;	
 	private List<Node> pdfNodes;	
-	
+	private List<Node> revisions;	
+		
 	public Collection<UniqueNode> getCompanies()
 	{
 		return companies.values();
@@ -65,6 +66,11 @@ public class RdfFileLoader {
 	public Collection<Node> getPdfs()
 	{
 		return pdfNodes;
+	}
+	
+	public Collection<Node> getRevisions()
+	{
+		return revisions;
 	}
 	
 	public Collection<UniqueNode> getEquipment()
@@ -109,7 +115,8 @@ public class RdfFileLoader {
 				otherNodes=new ArrayList<Node>();
 				emptyNodes=new ArrayList<Node>();
 				phoneNodes=new ArrayList<Node>();
-				pdfNodes=new ArrayList<Node>();					
+				pdfNodes=new ArrayList<Node>();
+				revisions=new ArrayList<Node>();		
 		}	catch (Exception e) {
 			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
@@ -295,7 +302,7 @@ public class RdfFileLoader {
 	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
 	{
 		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString(), NodeType.REVISION);
-		otherNodes.add(revNode);
+		revisions.add(revNode);
 		//created - optional
 		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
 		//checked - optional
@@ -380,6 +387,6 @@ public class RdfFileLoader {
 "					                        cae:firm_zip ?firm_zip;   " + 
 "					                        cae:firm_street ?firm_street.  }   " + 
 "   " + 
-"					        FILTER regex(?ger_uid,\"A3AOUEV0WH\")  " + 
+"					        FILTER regex(?ger_uid,\"A3AOUEE6WH\")  " + 
 "					    }";
 }

@@ -167,7 +167,7 @@ public class XmlWriter {
 				//append rest
 				for(Node n : rdf.getOther())
 				{
-					graph.appendChild(makeGenericElement(n));
+					graph.appendChild(makeGenericElement(n, "#FFFF99"));
 					makeEdges(graph, n);					
 				}
 				//append pdfs
@@ -176,7 +176,12 @@ public class XmlWriter {
 					graph.appendChild(makePdfElement(n));
 					makeEdges(graph, n);
 				}
-				
+				//append revs
+				for(Node n : rdf.getRevisions())
+				{
+					graph.appendChild(makeRevElement(n));
+					makeEdges(graph, n);
+				}
 				
 				
 				// write the content into xml file
@@ -260,9 +265,16 @@ public class XmlWriter {
 	
 	private Element makeCompanyElement(Node compNode)
 	{
-		Element compElement=makeGenericElement(compNode);
+		Element compElement=makeGenericElement(compNode, "#FF9900");
 		
 		return compElement;
+	}
+	
+	private Element makeRevElement(Node compNode)
+	{
+		Element revElement=makeGenericElement(compNode, "#FF99cc");
+		
+		return revElement;
 	}
 	
 	private Element makeEmptyElement(Node node)
@@ -278,7 +290,7 @@ public class XmlWriter {
 		data.appendChild(shN);
 		
 		Element fill=doc.createElement("y:Fill");
-		fill.setAttribute("color", "#FFCC00");
+		fill.setAttribute("color", "#c0c0c0");
 		fill.setAttribute("transparent", "false");
 		shN.appendChild(fill);
 		
@@ -290,16 +302,6 @@ public class XmlWriter {
 		shN.appendChild(borderStyleElement);
 		
 		Element label=doc.createElement("y:NodeLabel");
-		label.setAttribute("alignment", "center");
-		label.setAttribute("autoSizePolicy", "content");
-		label.setAttribute("fontFamily", "Dialog");
-		label.setAttribute("fontSize", "12");
-		label.setAttribute("fontStyle", "plain");
-		label.setAttribute("hasBackgroundColor", "false");
-		label.setAttribute("hasLineColor", "false");
-		label.setAttribute("modelName", "custom");
-		label.setAttribute("textColor", "#000000");
-		label.setAttribute("visible", "false");
 		shN.appendChild(label);
 		
 		Element shape=doc.createElement("y:Shape");
@@ -385,7 +387,7 @@ public class XmlWriter {
 	
 	private Element makeEquipmentPieceElement(Node equiNode)
 	{
-		Element equElement=makeGenericElement(equiNode);
+		Element equElement=makeGenericElement(equiNode,"#008000");
 		
 		return equElement;
 	}
@@ -399,7 +401,7 @@ public class XmlWriter {
 	
 	private Element makeDocumentElement(Node docNode)
 	{
-		Element docElement=makeGenericElement(docNode);
+		Element docElement=makeGenericElement(docNode, "#00ffff");
 		
 		return docElement;
 	}
@@ -422,7 +424,7 @@ public class XmlWriter {
 		return label;
 	}
 	  
-	private Element makeGenericElement(Node node)
+	private Element makeGenericElement(Node node, String color)
 	{
 		Element e=doc.createElement("node");
 		e.setAttribute("id", nodeIdChar + node.getId());
@@ -436,7 +438,7 @@ public class XmlWriter {
 		dataElement.appendChild(genNodeElement);
 		
 		Element fillElement=doc.createElement("y:Fill");
-		fillElement.setAttribute("color", "#FF9900");
+		fillElement.setAttribute("color", color);
 		fillElement.setAttribute("transparent", "false");
 		genNodeElement.appendChild(fillElement);
 		
