@@ -380,6 +380,6 @@ public class RdfFileLoader {
 "					                        cae:firm_zip ?firm_zip;   " + 
 "					                        cae:firm_street ?firm_street.  }   " + 
 "   " + 
-"					        FILTER regex(?ger_uid,\"A3AOUEE6WH\")  " + 
+"					        FILTER regex(?ger_uid,\"A3AOUEV0WH\")  " + 
 "					    }";
 }

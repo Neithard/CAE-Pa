@@ -226,14 +226,15 @@ public class XmlWriter {
 		edgeNode.appendChild(key);
 		
 		Element label=doc.createElement("y:EdgeLabel");
-		key.appendChild(doc.createElement("y:ArcEdge")).appendChild(label);
+		Element arc=doc.createElement("y:ArcEdge");
+		key.appendChild(arc);
+		arc.appendChild(label);
 		label.setTextContent(e.getName());
 		
-		Element desc=doc.createElement("y:PreferredPlacementDescriptor");
-		label.appendChild(desc);
-		desc.setAttribute("angle", "0.0");
-		desc.setAttribute("angleReference", "absolute");		
-		desc.setAttribute("angle", "0.0");		
+		Element arrows=doc.createElement("y:Arrows");
+		arrows.setAttribute("source", "none");
+		arrows.setAttribute("target", "delta");
+		arc.appendChild(arrows);
 		
 		
 		return edgeNode;
