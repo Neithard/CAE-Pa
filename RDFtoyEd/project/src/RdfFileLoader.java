@@ -134,7 +134,7 @@ public class RdfFileLoader {
 	{	
 		//create node
 		String label=rawPieceList.get(0).getLiteral("label").getValue().toString() + " (" + uid + ")"; //label is present in every solution
-		UniqueNode equipmentNode=new UniqueNode(label,  NodeType.GERAET, uid);
+		UniqueNode equipmentNode=new UniqueNode(label,  uid);
 		equipmentPieces.put(uid, equipmentNode);
 		
 		//find comment
@@ -143,7 +143,7 @@ public class RdfFileLoader {
 			String comment=sol.getLiteral("comment").getValue().toString();
 			if(!comment.isEmpty())
 			{
-				Node commentNode= new Node(comment,NodeType.OTHER);
+				Node commentNode= new Node(comment);
 				otherNodes.add(commentNode);
 				Edge commentEdge=new Edge("comment", commentNode);
 				equipmentNode.addEdge(commentEdge);
@@ -198,7 +198,7 @@ public class RdfFileLoader {
 		
 		//build node
 		String name=sol.getLiteral("typ").getValue().toString() + " (" + docUid + ")"; //type should be the same for every entry
-		UniqueNode docNode=new UniqueNode(name, NodeType.DOCUMENT, docUid);
+		UniqueNode docNode=new UniqueNode(name, docUid);
 		
 		/*
 		 * build company node
@@ -213,14 +213,13 @@ public class RdfFileLoader {
 			{
 				//Company Node itself
 				UniqueNode newCompanyNode= new UniqueNode(sol.getLiteral("company_name").getValue().toString() + " (" + comp_uid + ")",
-						NodeType.COMPANY, 
 						comp_uid);
 				//EMail - mandatory
-				Node compEmail=new Node(sol.getLiteral("email_adress").getValue().toString(), NodeType.EMAIL);
+				Node compEmail=new Node(sol.getLiteral("email_adress").getValue().toString());
 				mailNodes.add(compEmail);
 				newCompanyNode.addEdge(new Edge("eMail", compEmail));
 				//Telephone - mandatory
-				Node compPhone= new Node(sol.getLiteral("telephone_number").getValue().toString(), NodeType.PHONE);
+				Node compPhone= new Node(sol.getLiteral("telephone_number").getValue().toString());
 				phoneNodes.add(compPhone);
 				newCompanyNode.addEdge(new Edge("phone", compPhone));
 				//Street Address - optional
@@ -230,7 +229,7 @@ public class RdfFileLoader {
 					String comp_address=sol.getLiteral("firm_street").getValue().toString() + "\n" +
 										sol.getLiteral("firm_zip").getValue().toString() + " " +
 										sol.getLiteral("firm_location").getValue().toString();
-					Node addrNode=new Node(comp_address,NodeType.ADDRESS);
+					Node addrNode=new Node(comp_address);
 					otherNodes.add(addrNode);
 					newCompanyNode.addEdge(new Edge("address",
 							               addrNode));
@@ -241,12 +240,12 @@ public class RdfFileLoader {
 			docNode.addEdge(new Edge("company", companies.get(comp_uid)));
 		}
 		//project number is the same for every solution too
-		Node projNode=new Node(sol.getLiteral("project_number").getValue().toString(), NodeType.OTHER);
+		Node projNode=new Node(sol.getLiteral("project_number").getValue().toString());
 		otherNodes.add(projNode);
 		docNode.addEdge(new Edge("projectNumber",
 						projNode));
 		//also job_number
-		Node jobNode=new Node(sol.getLiteral("job_number").getValue().toString(), NodeType.OTHER);
+		Node jobNode=new Node(sol.getLiteral("job_number").getValue().toString());
 		otherNodes.add(jobNode);
 		docNode.addEdge(new Edge("jobNumber",
 				jobNode));
@@ -258,7 +257,6 @@ public class RdfFileLoader {
 		 * There might be several results for one revision, but their information (for this context) is the same.
 		 */
 		Set<String> revNumbers= new HashSet<String>();
-		MakeRevNodeReturnType newestRevision=new MakeRevNodeReturnType();
 		for(QuerySolution revSol : rawDocList)
 		{
 			String revisionNr=revSol.getLiteral("revision_number").getValue().toString();
@@ -268,29 +266,11 @@ public class RdfFileLoader {
 				MakeRevNodeReturnType revNode=makeRevisionNode(revSol);
 				docNode.addEdge(new Edge("hasRev", revNode.getNode()));
 				
-				Node pdfNode= new Node(revSol.getLiteral("PDF").getValue().toString(), NodeType.OTHER);
+				Node pdfNode= new Node(revSol.getLiteral("PDF").getValue().toString());
 				revNode.getNode().addEdge(new Edge("pdf", pdfNode));
 				pdfNodes.add(pdfNode);
 				
-				if(revNode.getDate() != "")
-				{
-					if(newestRevision.getDate() != "")
-					{
-						if(new Double(newestRevision.getDate().replace("," , "."))
-								< new Double(revNode.getDate().replace(",", ".")))
-						{
-							newestRevision=revNode;
-						}
-					} else newestRevision=revNode;
-				}
-				
 			}
-		}
-		
-		//set newest Revision node if there is one
-		if(newestRevision.getDate() != "")
-		{
-			newestRevision.getNode().setType(NodeType.CURRENTREVISION);
 		}
 		return docNode;
 	}
@@ -301,7 +281,7 @@ public class RdfFileLoader {
 	 */
 	private MakeRevNodeReturnType makeRevisionNode(QuerySolution sol)
 	{
-		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString(), NodeType.REVISION);
+		Node revNode=new Node("Revision " + sol.getLiteral("revision_number").getValue().toString());
 		revisions.add(revNode);
 		//created - optional
 		String cr_date=maybeMakeRevisionStepNode(revNode, sol, "cr", "created");
@@ -318,10 +298,10 @@ public class RdfFileLoader {
 		if(sol.contains(revPrefix + "_date"))
 		{
 			String date = sol.getLiteral(revPrefix + "_date").getValue().toString();
-			Node blankNode = new Node("", NodeType.EMPTY);
+			Node blankNode = new Node("");
 			emptyNodes.add(blankNode);
 			
-			Node dateNode=new Node(date, NodeType.DATE);
+			Node dateNode=new Node(date);
 			otherNodes.add(dateNode);
 			blankNode.addEdge(new Edge("date",
 							  dateNode));
@@ -330,7 +310,7 @@ public class RdfFileLoader {
 			String personName=sol.getLiteral(revPrefix + "_name").getValue().toString();
 			if(!persons.containsKey(personName))
 			{
-				persons.put(personName, new Node(personName, NodeType.PERSON));
+				persons.put(personName, new Node(personName));
 			}
 			blankNode.addEdge(new Edge("by", persons.get(personName)));
 			

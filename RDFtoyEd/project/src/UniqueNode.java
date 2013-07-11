@@ -1,8 +1,8 @@
 
 public class UniqueNode extends Node {
 	private  String uid;
-	public UniqueNode(String name, NodeType type, String uid) {
-		super(name, type);
+	public UniqueNode(String name, String uid) {
+		super(name);
 		this.uid=uid;
 
 	}
