@@ -1,0 +1,460 @@
+<ComosXmlExport>
+  <RuI UID="A3AOUG6XWH" Speicherort="C:\Dokumente und Einstellungen\prlt09\Desktop\A33J5VYQ0Q_c1.pdf" Dokument="0|H1|T2|04|P002|A33J5VYQ0Q" OwnerUID="A3AOUEV0WH" OwnerName="P002" OwnerDescription="Druck" Beschreibung="">
+    <Auftrags_und_Projektnummer UID="A3AOUGMMWH" Auftragsnr="" Projektnr="" />
+    <RevInfo UID="A3AOUGMMWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOX4V0OL" Speicherort="S:\comosfile\123457\AA\A3AOX4V0OL.pdf" Dokument="0|H1|T2|01|P001|Bedienungsanleitung A33J5VYQ0Q" OwnerUID="A3AOUEE6WH" OwnerName="P001" OwnerDescription="Kreiselpumpe" Beschreibung="" />
+  <RuI UID="A3AOX500OL" Speicherort="C:\Dokumente und Einstellungen\prlt09\Desktop\Bedienungsanleitung A33J5VYQ0Q.pdf" Dokument="0|H1|T2|01|G1|Bedienungsanleitung A33J5VYQ0Q" OwnerUID="A3AOUE3XWH" OwnerName="G1" OwnerDescription="Kreiselpumpe" Beschreibung="" />
+  <RuI UID="A3AOUG6OWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|001|EDA.000" OwnerUID="A3AOUGMVWH" OwnerName="001" OwnerDescription="Technische Spezifikationen" Beschreibung="TS-Nummern-Liste">
+    <Auftrags_und_Projektnummer UID="A3AOUG7VWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUG7VWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3APVE2PEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|04|001|EDA.000" OwnerUID="A3APVE11EH" OwnerName="001" OwnerDescription="Technische Spezifikationen" Beschreibung="TS-Nummern-Liste">
+    <Auftrags_und_Projektnummer UID="A3APVE2QEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVE2QEH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUE42WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T001|EDA.001" OwnerUID="A3AOUGESWH" OwnerName="T001" OwnerDescription="Temperatur" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUFT8WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFT8WH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUEKNWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T002|EDA.001" OwnerUID="A3AOUF46WH" OwnerName="T002" OwnerDescription="Temperatur" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUGS1WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUGS1WH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUF51WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|F001|EDA.001" OwnerUID="A3AOUE73WH" OwnerName="F001" OwnerDescription="Durchfluss, Durchsatz" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUGRJWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUGRJWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUFK5WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|L001|EDA.001" OwnerUID="A3AOUFOUWH" OwnerName="L001" OwnerDescription="Stand" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUF64WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUF64WH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUG0OWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T004|EDA.001" OwnerUID="A3AOUGMAWH" OwnerName="T004" OwnerDescription="Temperatur" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUFHUWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFHUWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUF6FWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|P002|EDA.001" OwnerUID="A3AOUEV0WH" OwnerName="P002" OwnerDescription="Druck" Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUFR4WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DPOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DQOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DROL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DUOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DTOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DVOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5DSOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFR4WH" Beschreibung="" Wert="2" />
+    <RevInfo UID="A3AOX5DPOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX5DQOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX5DROL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX5DUOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5DTOL" Beschreibung="Erstellt am" Wert="41464,6399537037" />
+    <RevInfo UID="A3AOX5DVOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5DWOL" Beschreibung="Geprüft am" Wert="41464,641412037" />
+    <RevInfo UID="A3AOX5DYOL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5DXOL" Beschreibung="Freigegeben am" Wert="41464,641412037" />
+    <RevInfo UID="A3AOX5DSOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOUF2JWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T002|EDA.002" OwnerUID="A3AOUF46WH" OwnerName="T002" OwnerDescription="Temperatur" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUFWUWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFWUWH" Beschreibung="" Wert="2" />
+  </RuI>
+  <RuI UID="A3AOUFJKWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|F001|EDA.002" OwnerUID="A3AOUE73WH" OwnerName="F001" OwnerDescription="Durchfluss, Durchsatz" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUFZ0WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFZ0WH" Beschreibung="" Wert="2" />
+  </RuI>
+  <RuI UID="A3AOUGCBWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T001|EDA.002" OwnerUID="A3AOUGESWH" OwnerName="T001" OwnerDescription="Temperatur" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUF13WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUF13WH" Beschreibung="" Wert="3" />
+  </RuI>
+  <RuI UID="A3AOUGKKWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|T004|EDA.002" OwnerUID="A3AOUGMAWH" OwnerName="T004" OwnerDescription="Temperatur" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUEPWWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUEPWWH" Beschreibung="" Wert="2" />
+  </RuI>
+  <RuI UID="A3AOUG4RWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|L001|EDA.002" OwnerUID="A3AOUFOUWH" OwnerName="L001" OwnerDescription="Stand" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUEE3WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUEE3WH" Beschreibung="" Wert="2" />
+  </RuI>
+  <RuI UID="A3AOUFLQWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|P002|EDA.002" OwnerUID="A3AOUEV0WH" OwnerName="P002" OwnerDescription="Druck" Beschreibung="Geräteblatt">
+    <Auftrags_und_Projektnummer UID="A3AOUEY5WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JTOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JUOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JVOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JZOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5K0OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5K2OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5K1OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX5JWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUEY5WH" Beschreibung="" Wert="3" />
+    <RevInfo UID="A3AOX5JTOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX5JUOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX5JVOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX5JYOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5JXOL" Beschreibung="Erstellt am" Wert="41464,6415162037" />
+    <RevInfo UID="A3AOX5JZOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5K0OL" Beschreibung="Geprüft am" Wert="41464,6416666667" />
+    <RevInfo UID="A3AOX5K2OL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX5K1OL" Beschreibung="Freigegeben am" Wert="41464,6416666667" />
+    <RevInfo UID="A3AOX5JWOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3APVE3BEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|04|002|EDA.003" OwnerUID="A3APVE12EH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="EMR-Stellenliste">
+    <Auftrags_und_Projektnummer UID="A3APVE3CEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVE3CEH" Beschreibung="" Wert="3" />
+  </RuI>
+  <RuI UID="A3AOUFIPWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|002|EDA.003" OwnerUID="A3AOUE2BWH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="EMR-Stellenliste">
+    <Auftrags_und_Projektnummer UID="A3AOUF2SWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUF2SWH" Beschreibung="" Wert="3" />
+  </RuI>
+  <RuI UID="A3AOUFYJWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|002|EDA.004" OwnerUID="A3AOUE2BWH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Meldungs- und Grenzsignalliste">
+    <Auftrags_und_Projektnummer UID="A3AOUEC6WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUEC6WH" Beschreibung="" Wert="4" />
+  </RuI>
+  <RuI UID="A3APVE43EH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|04|002|EDA.004" OwnerUID="A3APVE12EH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Meldungs- und Grenzsignalliste">
+    <Auftrags_und_Projektnummer UID="A3APVE42EH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVE42EH" Beschreibung="" Wert="4" />
+  </RuI>
+  <RuI UID="A3APVE4UEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|04|002|EDA.005" OwnerUID="A3APVE12EH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Beheizungsliste">
+    <Auftrags_und_Projektnummer UID="A3APVE4TEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVE4TEH" Beschreibung="" Wert="5" />
+  </RuI>
+  <RuI UID="A3AOUF28WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|002|EDA.005" OwnerUID="A3AOUE2BWH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Beheizungsliste">
+    <Auftrags_und_Projektnummer UID="A3AOUGAYWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUGAYWH" Beschreibung="" Wert="5" />
+  </RuI>
+  <RuI UID="A3APVE5LEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|04|002|EDA.006" OwnerUID="A3APVE12EH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Liste dichtmachender Geräte">
+    <Auftrags_und_Projektnummer UID="A3APVE5KEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVE5KEH" Beschreibung="" Wert="6" />
+  </RuI>
+  <RuI UID="A3AOUEMJWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|04|002|EDA.006" OwnerUID="A3AOUE2BWH" OwnerName="002" OwnerDescription="Sonstige Dokumente (Listen)" Beschreibung="Liste dichtmachender Geräte">
+    <Auftrags_und_Projektnummer UID="A3AOUFJ6WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFJ6WH" Beschreibung="" Wert="6" />
+  </RuI>
+  <RuI UID="A3AOUEODWH" Speicherort="S:\comosfile\123457\AA\A3AOUEODWH.CRp" Dokument="0|H1|T2|04|T005|001|EFS.001" OwnerUID="A3AOUG05WH" OwnerName="001" OwnerDescription="Temperatur" Beschreibung="Stellenplan, Detail-Darstellung">
+    <Auftrags_und_Projektnummer UID="A3AOUGFJWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUGFJWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUF3IWH" Speicherort="S:\comosfile\123457\AA\A3AOUF3IWH.CRp" Dokument="0|H1|T2|04|T001|001|EFS.001" OwnerUID="A3AOUE5DWH" OwnerName="001" OwnerDescription="Temperatur" Beschreibung="Stellenplan, Detail-Darstellung">
+    <Auftrags_und_Projektnummer UID="A3AOUGRBWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUGRBWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUGCPWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|B001|PDA.530" OwnerUID="A3AOUEQ4WH" OwnerName="B001" OwnerDescription="Behälter mit gewölbten Böden, allg." Beschreibung="Datenblatt Behälter">
+    <Auftrags_und_Projektnummer UID="A3AOUG89WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUGFLWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BHOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BIOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BJOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BMOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BLOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BNOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BOOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BQOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BPOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX0BKOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUG89WH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUGFLWH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3AOX0BHOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX0BIOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX0BJOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX0BMOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX0BLOL" Beschreibung="Erstellt am" Wert="41464,6295949074" />
+    <RevInfo UID="A3AOX0BNOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX0BOOL" Beschreibung="Geprüft am" Wert="41464,6338194444" />
+    <RevInfo UID="A3AOX0BQOL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX0BPOL" Beschreibung="Freigegeben am" Wert="41464,6338194444" />
+    <RevInfo UID="A3AOX0BKOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOUFXBWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|C1|PDA.530" OwnerUID="A3AOUG0WWH" OwnerName="C1" OwnerDescription="Behälter mit gewölbten Böden, allg." Beschreibung="Datenblatt Behälter">
+    <Auftrags_und_Projektnummer UID="A3AOUFPSWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUG0NWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OUOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OVOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OZOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3P0OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3P1OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3P3OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3P2OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3OXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFPSWH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUG0NWH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3AOX3OUOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX3OVOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX3OWOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX3OZOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3OYOL" Beschreibung="Erstellt am" Wert="41464,6390972222" />
+    <RevInfo UID="A3AOX3P0OL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3P1OL" Beschreibung="Geprüft am" Wert="41464,6391550926" />
+    <RevInfo UID="A3AOX3P3OL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3P2OL" Beschreibung="Freigegeben am" Wert="41464,6391550926" />
+    <RevInfo UID="A3AOX3OXOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOUF70WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|P001|PDA.540" OwnerUID="A3AOUEE6WH" OwnerName="P001" OwnerDescription="Kreiselpumpe" Beschreibung="Datenblatt Pumpe">
+    <Auftrags_und_Projektnummer UID="A3AOUEF7WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUELPWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUEF7WH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUELPWH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUEJRWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|G1|PDA.540" OwnerUID="A3AOUE3XWH" OwnerName="G1" OwnerDescription="Kreiselpumpe" Beschreibung="Datenblatt Pumpe">
+    <Auftrags_und_Projektnummer UID="A3AOUFZCWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUG64WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48LOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48MOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48NOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48QOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48POL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48ROL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48SOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48UOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48TOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX48OOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFZCWH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUG64WH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3AOX48LOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX48MOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX48NOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX48QOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX48POL" Beschreibung="Erstellt am" Wert="41464,6394907407" />
+    <RevInfo UID="A3AOX48ROL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX48SOL" Beschreibung="Geprüft am" Wert="41464,6396990741" />
+    <RevInfo UID="A3AOX48UOL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX48TOL" Beschreibung="Freigegeben am" Wert="41464,6396990741" />
+    <RevInfo UID="A3AOX48OOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3APVF9EEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|01|G1|PDA.540" OwnerUID="A3APVF9CEH" OwnerName="G1" OwnerDescription="Flüssigkeitspumpe, allg." Beschreibung="Datenblatt Pumpe">
+    <Auftrags_und_Projektnummer UID="A3APVF9FEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVF9FEH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3APVF3AEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|01|H1|PDA.570" OwnerUID="A3APVF38EH" OwnerName="H1" OwnerDescription="Mischer allg." Beschreibung="Datenblatt">
+    <Auftrags_und_Projektnummer UID="A3APVF3BEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVF3BEH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3APVEYNEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|02|R1|PDA.630" OwnerUID="A3APVEYIEH" OwnerName="R1" OwnerDescription="2-Wege-Regelventil" Beschreibung="Datenblatt Armatur">
+    <Auftrags_und_Projektnummer UID="A3APVEYMEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSSEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSTEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSUEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSXEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSWEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSYEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSZEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHT1EH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHT0EH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHSVEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVEYMEH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3APVHSSEH" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3APVHSTEH" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3APVHSUEH" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3APVHSXEH" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHSWEH" Beschreibung="Erstellt am" Wert="41466,4959837963" />
+    <RevInfo UID="A3APVHSYEH" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHSZEH" Beschreibung="Geprüft am" Wert="41466,4960416667" />
+    <RevInfo UID="A3APVHT1EH" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHT0EH" Beschreibung="Freigegeben am" Wert="41466,4960416667" />
+    <RevInfo UID="A3APVHSVEH" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3APVEPDEH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T3|01|E1|PDA.640" OwnerUID="A3APVEP2EH" OwnerName="E1" OwnerDescription="Oberflächen-WT, allg." Beschreibung="Datenblatt Wärmeaustauscher">
+    <Auftrags_und_Projektnummer UID="A3APVEPEEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3APVEPEEH" Beschreibung="" Wert="1" />
+  </RuI>
+  <RuI UID="A3AOUET2WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|E1|PDA.640" OwnerUID="A3AOUEPQWH" OwnerName="E1" OwnerDescription="Oberflächen-WT, allg." Beschreibung="Datenblatt Wärmeaustauscher">
+    <Auftrags_und_Projektnummer UID="A3AOUFYIWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX409OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40AOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40BOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40EOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40DOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40FOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40GOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40IOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40HOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX40COL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFYIWH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3AOX409OL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX40AOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX40BOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX40EOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX40DOL" Beschreibung="Erstellt am" Wert="41464,6392476852" />
+    <RevInfo UID="A3AOX40FOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX40GOL" Beschreibung="Geprüft am" Wert="41464,6393518519" />
+    <RevInfo UID="A3AOX40IOL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX40HOL" Beschreibung="Freigegeben am" Wert="41464,6393518519" />
+    <RevInfo UID="A3AOX40COL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOUE74WH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|B001|PDAL.001" OwnerUID="A3AOUEQ4WH" OwnerName="B001" OwnerDescription="Behälter mit gewölbten Böden, allg." Beschreibung="Datenblatt Behälter">
+    <Auftrags_und_Projektnummer UID="A3AOUESQWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUEZ7WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BSOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BTOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BUOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BZOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3C1OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3C0OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX3BVOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUFHEWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUESQWH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUEZ7WH" Beschreibung="" Wert="3" />
+    <RevInfo UID="A3AOX3BSOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX3BTOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX3BUOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX3BXOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3BWOL" Beschreibung="Erstellt am" Wert="41464,6384375" />
+    <RevInfo UID="A3AOX3BYOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3BZOL" Beschreibung="Geprüft am" Wert="41464,638587963" />
+    <RevInfo UID="A3AOX3C1OL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX3C0OL" Beschreibung="Freigegeben am" Wert="41464,638587963" />
+    <RevInfo UID="A3AOX3BVOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+    <RevInfo UID="A3AOUFHEWH" Beschreibung="Revisionsworkflow" Wert="" />
+  </RuI>
+  <RuI UID="A3AOUFBLWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|C1|PDAL.001" OwnerUID="A3AOUG0WWH" OwnerName="C1" OwnerDescription="Behälter mit gewölbten Böden, allg." Beschreibung="Datenblatt Behälter">
+    <Auftrags_und_Projektnummer UID="A3AOUE6XWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUED4WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUEVYWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUE6XWH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUED4WH" Beschreibung="" Wert="3" />
+    <RevInfo UID="A3AOUEVYWH" Beschreibung="Revisionsworkflow" Wert="" />
+  </RuI>
+  <RuI UID="A3AOUE2KWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|G1|PDAM.010" OwnerUID="A3AOUE3XWH" OwnerName="G1" OwnerDescription="Kreiselpumpe" Beschreibung="Datenblatt Pumpe">
+    <Auftrags_und_Projektnummer UID="A3AOUFCWWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUFKBWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CHOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CIOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CJOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CMOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CLOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CNOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4COOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CQOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CPOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOX4CKOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUFCWWH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUFKBWH" Beschreibung="" Wert="3" />
+    <RevInfo UID="A3AOX4CHOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOX4CIOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOX4CJOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOX4CMOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX4CLOL" Beschreibung="Erstellt am" Wert="41464,6397569444" />
+    <RevInfo UID="A3AOX4CNOL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX4COOL" Beschreibung="Geprüft am" Wert="41464,6398611111" />
+    <RevInfo UID="A3AOX4CQOL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOX4CPOL" Beschreibung="Freigegeben am" Wert="41464,6398611111" />
+    <RevInfo UID="A3AOX4CKOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOUEPOWH" Speicherort="S:\comosfile\123457\@NO@.CRp" Dokument="0|H1|T2|01|P001|PDAM.010" OwnerUID="A3AOUEE6WH" OwnerName="P001" OwnerDescription="Kreiselpumpe" Beschreibung="Datenblatt Pumpe">
+    <Auftrags_und_Projektnummer UID="A3AOUG26WH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOUG9KWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RevInfo UID="A3AOUG26WH" Beschreibung="" Wert="" />
+    <RevInfo UID="A3AOUG9KWH" Beschreibung="" Wert="3" />
+  </RuI>
+  <RuI UID="A3AOUU4FWH" Speicherort="S:\comosfile\123457\AA\A3AOUU4FWH.CRp" Dokument="0|H1|T2|PFB.001" OwnerUID="A3AOUGA8WH" OwnerName="T2" OwnerDescription="Teilanlage" Beschreibung="R&amp;I A0 EN 10628">
+    <Auftrags_und_Projektnummer UID="A3AOUU4EWH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYUOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYVOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYZOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUZ0OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUZ1OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUZ3OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUZ2OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOVUYXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Firma UID="A3AOWZAGOL" Anlage="=0.H1.T2" Ort="" Name="Siemens" Kennzeichen="Siemens" Beschreibung="">
+      <Attribut Name="Mail" Wert="mail@siemens.de" />
+      <Attribut Name="Name" Wert="Siemens" />
+      <Attribut Name="Ort" Wert="Test" />
+      <Attribut Name="Plz" Wert="12345" />
+      <Attribut Name="Strasse" Wert="siemensstraße" />
+      <Attribut Name="Telefon" Wert="321456" />
+    </Firma>
+    <RuI-Element UID="A3AOUULPWH" Name="=0.H1.T2.W2.01" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3AOUE3XWH" Name="=0.H1.T2G1" Beschreibung="Kreiselpumpe" />
+    <RuI-Element UID="A3AOUEE6WH" Name="=0.H1.T2P001" Beschreibung="Kreiselpumpe" />
+    <RevInfo UID="A3AOUU4EWH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3AOVUYUOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOVUYVOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOVUYWOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOVUYZOL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOVUYYOL" Beschreibung="Erstellt am" Wert="41464,5719328704" />
+    <RevInfo UID="A3AOVUZ0OL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOVUZ1OL" Beschreibung="Geprüft am" Wert="41464,6291319445" />
+    <RevInfo UID="A3AOVUZ3OL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOVUZ2OL" Beschreibung="Freigegeben am" Wert="41464,6291319445" />
+    <RevInfo UID="A3AOVUYXOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3APVEADEH" Speicherort="S:\comosfile\123457\AA\A3APVEADEH.CRp" Dokument="0|H1|T3|PFB.001" OwnerUID="A3APVE0WEH" OwnerName="T3" OwnerDescription="Teilanlage" Beschreibung="R&amp;I A2 EN 10628">
+    <Auftrags_und_Projektnummer UID="A3APVEACEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRCEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRDEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHREEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRHEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRGEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRIEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRJEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRLEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRKEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3APVHRFEH" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <RuI-Element UID="A3APVEYIEH" Name="=0.H1.T3-R1" Beschreibung="2-Wege-Regelventil" />
+    <RuI-Element UID="A3APVEYJEH" Name="=0.H1.T3-R1-K1" Beschreibung="Stellungsregler (für Armatur)" />
+    <RuI-Element UID="A3APVFQ2EH" Name="=0.H1.T3.W2.01" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3APVFCZEH" Name="=0.H1.T3.W1.01" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3APVG6SEH" Name="=0.H1.T3.W2.02" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3APVGRDEH" Name="=0.H1.T3.W2.03" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3APVEP2EH" Name="=0.H1.T3E1" Beschreibung="Oberflächen-WT, allg." />
+    <RuI-Element UID="A3APVF9CEH" Name="=0.H1.T3G1" Beschreibung="Flüssigkeitspumpe, allg." />
+    <RuI-Element UID="A3APVF38EH" Name="=0.H1.T3H1" Beschreibung="Mischer allg." />
+    <RevInfo UID="A3APVEACEH" Beschreibung="" Wert="1" />
+    <RevInfo UID="A3APVHRCEH" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3APVHRDEH" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3APVHREEH" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3APVHRHEH" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHRGEH" Beschreibung="Erstellt am" Wert="41466,4897453704" />
+    <RevInfo UID="A3APVHRIEH" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHRJEH" Beschreibung="Geprüft am" Wert="41466,4959837963" />
+    <RevInfo UID="A3APVHRLEH" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3APVHRKEH" Beschreibung="Freigegeben am" Wert="41466,4959837963" />
+    <RevInfo UID="A3APVHRFEH" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+  <RuI UID="A3AOVG5Q7M" Speicherort="S:\comosfile\123457\AA\A3AOVG5Q7M.CRp" Dokument="0|H1|T2|PFB.002" OwnerUID="A3AOUGA8WH" OwnerName="T2" OwnerDescription="Teilanlage" Beschreibung="R&amp;I A2 EN 10628">
+    <Auftrags_und_Projektnummer UID="A3AOVG5R7M" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXDWOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXDXOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXDYOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE1OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE0OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE2OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE3OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE5OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXE4OL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Auftrags_und_Projektnummer UID="A3AOWXDZOL" Auftragsnr="Auftrag Nr.: 5-2013" Projektnr="Projekt-Nr.: 123457" />
+    <Firma UID="A3AOXAUGOL" Anlage="=0.H1.T2" Ort="" Name="Siemens" Kennzeichen="Siemens" Beschreibung="">
+      <Attribut Name="Mail" Wert="mail@siemens.de" />
+      <Attribut Name="Name" Wert="Siemens" />
+      <Attribut Name="Ort" Wert="Test" />
+      <Attribut Name="Plz" Wert="12345" />
+      <Attribut Name="Strasse" Wert="siemensstraße" />
+      <Attribut Name="Telefon" Wert="321456" />
+    </Firma>
+    <RuI-Element UID="A3AOXST3OL" Name="=0.H1.T2.W5.01" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3AOXSBHOL" Name="=0.H1.T2.W4.01" Beschreibung="Rohrleitungsabschnitt" />
+    <RuI-Element UID="A3AOUEQ4WH" Name="=0.H1.T2B001" Beschreibung="Behälter mit gewölbten Böden, allg." />
+    <RuI-Element UID="A3AOUEPQWH" Name="=0.H1.T2E1" Beschreibung="Oberflächen-WT, allg." />
+    <RevInfo UID="A3AOVG5R7M" Beschreibung="" Wert="2" />
+    <RevInfo UID="A3AOWXDWOL" Beschreibung="Anlage/Ort" Wert="" />
+    <RevInfo UID="A3AOWXDXOL" Beschreibung="Revisionsindex" Wert="*" />
+    <RevInfo UID="A3AOWXDYOL" Beschreibung="Revisionskennzeichen" Wert="*" />
+    <RevInfo UID="A3AOWXE1OL" Beschreibung="Erstellt von" Wert="PRLT09" />
+    <RevInfo UID="A3AOWXE0OL" Beschreibung="Erstellt am" Wert="41464,6779050926" />
+    <RevInfo UID="A3AOWXE2OL" Beschreibung="Geprüft von" Wert="PRLT09" />
+    <RevInfo UID="A3AOWXE3OL" Beschreibung="Geprüft am" Wert="41464,6829976852" />
+    <RevInfo UID="A3AOWXE5OL" Beschreibung="Freigegeben von" Wert="PRLT09" />
+    <RevInfo UID="A3AOWXE4OL" Beschreibung="Freigegeben am" Wert="41464,6829976852" />
+    <RevInfo UID="A3AOWXDZOL" Beschreibung="Revisionsbeschreibung" Wert="Revision" />
+  </RuI>
+</ComosXmlExport>
