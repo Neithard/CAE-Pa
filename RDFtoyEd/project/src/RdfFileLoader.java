@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 
 
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.reasoner.rulesys.builtins.Regex;
 import com.hp.hpl.jena.util.FileManager;
 
 import com.hp.hpl.jena.query.Query;
@@ -83,8 +84,58 @@ public class RdfFileLoader {
 		return documents.values();
 	}
 
-	public RdfFileLoader(String sourceFile) throws IllegalArgumentException
+	public RdfFileLoader(String sourceFile, String uidRegEx) throws IllegalArgumentException
 	{
+		queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
+				"	PREFIX cae: <http://tu-dresden.de/ifa/cae/>   " + 
+				"	    " + 
+				"	SELECT  ?label ?typ ?project_number ?comment ?job_number ?revision_number    " + 
+				"	        ?revision_comment ?PDF ?ch_name ?ch_date ?cr_name ?cr_date  " + 
+				"	        ?re_name ?re_date  ?company_name  ?email_adress  ?telephone_number   " + 
+				"	        ?firm_location  ?firm_zip  ?firm_street  ?ger_uid ?doc_uid  ?comp_uid" + 
+				"   " + 
+				"					    WHERE {   " + 
+				"					           ?gereat    cae:has_dokument  ?dokument;   " + 
+				"										 rdfs:comment      ?comment;  " +
+	            "										  cae:uid           ?ger_uid; " +
+				"					                      rdfs:label        ?label.   " + 
+				"   " + 
+				"					           ?dokument   cae:typ            ?typ;   " + 
+				"					                       cae:project_number ?project_number;   " + 
+				"					                       cae:job_number     ?job_number;   " + 
+				"                                          cae:uid            ?doc_uid."  +
+				"					           ?dokument   cae:has_revision   ?revision.    " + 
+				"   " + 
+				"					           ?revision  cae:revision_number ?revision_number;   " + 
+				"					                      cae:PDF ?PDF .   " + 
+				"					OPTIONAL { ?revision  cae:revision_comment ?revision_comment. }   " + 
+				"   " + 
+				"					OPTIONAL { ?revision  cae:checked ?checked.   " + 
+				"					           ?checked   cae:name ?ch_name;   " + 
+				"					                      cae:date ?ch_date. }   " + 
+				"   " + 
+	"					OPTIONAL { ?revision  cae:created ?created.   " + 
+	"					           ?created   cae:name ?cr_name;   " + 
+	"					                      cae:date ?cr_date. }   " + 
+	"   " + 
+	"					OPTIONAL { ?revision  cae:released ?released.   " + 
+	"					           ?released  cae:name ?re_name;   " + 
+	"					                      cae:date ?re_date. }   " + 
+	"   " + 
+	"					OPTIONAL { ?dokument   cae:has_firm ?firm.   " + 
+	"					           ?firm       cae:company_name ?company_name;    " + 
+	"                                          cae:uid          ?comp_uid;       "	+
+	"                                          cae:email_adress ?email_adress;   " + 
+	"					                       cae:telephone_number ?telephone_number. }   " + 
+	"   " + 
+	"					OPTIONAL {  ?firm       cae:has_address ?adress.   " + 
+	"					            ?adress     cae:firm_location ?firm_location;    " + 
+	"					                        cae:firm_zip ?firm_zip;   " + 
+	"					                        cae:firm_street ?firm_street.  }   " + 
+	"   " + 
+	"					        FILTER regex(?ger_uid,\"" +  uidRegEx + "\")  " + 
+	"					    }";
+		
 		HashMap<String, List<QuerySolution>> equipment= new HashMap<String, List<QuerySolution>>();
 		//create new Query
 		try{
@@ -320,53 +371,5 @@ public class RdfFileLoader {
 		} else return "";
 	}
 	
-	private static final String queryString="PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>    " + 
-			"	PREFIX cae: <http://tu-dresden.de/ifa/cae/>   " + 
-			"	    " + 
-			"	SELECT  ?label ?typ ?project_number ?comment ?job_number ?revision_number    " + 
-			"	        ?revision_comment ?PDF ?ch_name ?ch_date ?cr_name ?cr_date  " + 
-			"	        ?re_name ?re_date  ?company_name  ?email_adress  ?telephone_number   " + 
-			"	        ?firm_location  ?firm_zip  ?firm_street  ?ger_uid ?doc_uid  ?comp_uid" + 
-			"   " + 
-			"					    WHERE {   " + 
-			"					           ?gereat    cae:has_dokument  ?dokument;   " + 
-			"										 rdfs:comment      ?comment;  " +
-            "										  cae:uid           ?ger_uid; " +
-			"					                      rdfs:label        ?label.   " + 
-			"   " + 
-			"					           ?dokument   cae:typ            ?typ;   " + 
-			"					                       cae:project_number ?project_number;   " + 
-			"					                       cae:job_number     ?job_number;   " + 
-			"                                          cae:uid            ?doc_uid."  +
-			"					           ?dokument   cae:has_revision   ?revision.    " + 
-			"   " + 
-			"					           ?revision  cae:revision_number ?revision_number;   " + 
-			"					                      cae:PDF ?PDF .   " + 
-			"					OPTIONAL { ?revision  cae:revision_comment ?revision_comment. }   " + 
-			"   " + 
-			"					OPTIONAL { ?revision  cae:checked ?checked.   " + 
-			"					           ?checked   cae:name ?ch_name;   " + 
-			"					                      cae:date ?ch_date. }   " + 
-			"   " + 
-"					OPTIONAL { ?revision  cae:created ?created.   " + 
-"					           ?created   cae:name ?cr_name;   " + 
-"					                      cae:date ?cr_date. }   " + 
-"   " + 
-"					OPTIONAL { ?revision  cae:released ?released.   " + 
-"					           ?released  cae:name ?re_name;   " + 
-"					                      cae:date ?re_date. }   " + 
-"   " + 
-"					OPTIONAL { ?dokument   cae:has_firm ?firm.   " + 
-"					           ?firm       cae:company_name ?company_name;    " + 
-"                                          cae:uid          ?comp_uid;       "	+
-"                                          cae:email_adress ?email_adress;   " + 
-"					                       cae:telephone_number ?telephone_number. }   " + 
-"   " + 
-"					OPTIONAL {  ?firm       cae:has_address ?adress.   " + 
-"					            ?adress     cae:firm_location ?firm_location;    " + 
-"					                        cae:firm_zip ?firm_zip;   " + 
-"					                        cae:firm_street ?firm_street.  }   " + 
-"   " + 
-"					        FILTER regex(?ger_uid,\"A3AOUEE6WH\")  " + 
-"					    }";
+	private final String queryString;
 }
