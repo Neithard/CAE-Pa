@@ -379,7 +379,7 @@ public class XmlWriter {
 		Element pdfElement=makeSvgNode(48.0, 48.0, pdfNode, 4);
 		Element key1=doc.createElement("data");
 		key1.setAttribute("key", "d4");
-		key1.setTextContent("<![CDATA[file://"+ uri + " ]]>");
+		key1.setTextContent(uri);
 		pdfElement.appendChild(key1);
 		
 		return pdfElement;

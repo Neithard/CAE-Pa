@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Node extends NamedGraphElement {
 	private static int nodeIdCounter=0;
-	private final int id;
 	private List<Edge> edges;
 	
 	
@@ -19,15 +18,8 @@ public class Node extends NamedGraphElement {
 
 	}
 
-
-	public int getId() {
-		return id;
-	}
-
-
 	public Node(String name){
-		super(name);
-		this.id=Node.nodeIdCounter;
+		super(name,nodeIdCounter);
 		nodeIdCounter++;
 		edges=new ArrayList<Edge>();
 
