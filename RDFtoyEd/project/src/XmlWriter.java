@@ -129,6 +129,11 @@ public class XmlWriter {
 				{
 					graph.appendChild(makeEmptyElement(n));
 				}
+				//append rest
+				for(Node n : rdf.getOther())
+				{
+					graph.appendChild(makeGenericElement(n));
+				}
 				
 				
 				// write the content into xml file
