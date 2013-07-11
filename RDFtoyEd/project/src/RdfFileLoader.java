@@ -30,6 +30,7 @@ public class RdfFileLoader {
 	private List<Node> otherNodes;
 	private List<Node> emptyNodes;
 	private List<Node> phoneNodes;	
+	private List<Node> pdfNodes;	
 	
 	public Collection<UniqueNode> getCompanies()
 	{
@@ -59,6 +60,11 @@ public class RdfFileLoader {
 	public Collection<Node> getPhones()
 	{
 		return phoneNodes;
+	}
+	
+	public Collection<Node> getPdfs()
+	{
+		return pdfNodes;
 	}
 	
 	public Collection<UniqueNode> getEquipment()
@@ -102,7 +108,8 @@ public class RdfFileLoader {
 				mailNodes=new ArrayList<Node>();
 				otherNodes=new ArrayList<Node>();
 				emptyNodes=new ArrayList<Node>();
-				phoneNodes=new ArrayList<Node>();				
+				phoneNodes=new ArrayList<Node>();
+				pdfNodes=new ArrayList<Node>();					
 		}	catch (Exception e) {
 			System.out.println(e.toString());
 			throw new IllegalArgumentException("File: \"" + sourceFile + "\" not valid.");
@@ -253,6 +260,10 @@ public class RdfFileLoader {
 				revNumbers.add(revisionNr);
 				MakeRevNodeReturnType revNode=makeRevisionNode(revSol);
 				docNode.addEdge(new Edge("hasRev", revNode.getNode()));
+				
+				Node pdfNode= new Node(revSol.getLiteral("PDF").getValue().toString(), NodeType.OTHER);
+				revNode.getNode().addEdge(new Edge("pdf", pdfNode));
+				pdfNodes.add(pdfNode);
 				
 				if(revNode.getDate() != "")
 				{
