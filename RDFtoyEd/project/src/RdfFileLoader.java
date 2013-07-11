@@ -306,20 +306,36 @@ public class RdfFileLoader {
 		 * revisions for a document can be uniquely identified by their revision_number
 		 * There might be several results for one revision, but their information (for this context) is the same.
 		 */
-		Set<String> revNumbers= new HashSet<String>();
+		HashMap<String, Node> revNumbers= new HashMap<String, Node>();
 		for(QuerySolution revSol : rawDocList)
 		{
 			String revisionNr=revSol.getLiteral("revision_number").getValue().toString();
-			if(!revNumbers.contains(revisionNr))
+			if(!revNumbers.containsKey(revisionNr))
 			{
-				revNumbers.add(revisionNr);
 				Node revNode=makeRevisionNode(revSol);
+				revNumbers.put(revisionNr, revNode);
 				docNode.addEdge(new Edge("hasRev", revNode));
 				
 				Node pdfNode= new Node(revSol.getLiteral("PDF").getValue().toString());
 				revNode.addEdge(new Edge("pdf", pdfNode));
 				pdfNodes.add(pdfNode);
 				
+			}
+		}
+		
+		//build comment nodes
+		for(QuerySolution revSol : rawDocList)
+		{
+			if(revSol.contains("revision_comment"))
+			{
+				String revisionNr=revSol.getLiteral("revision_number").getValue().toString();
+				if(revNumbers.containsKey(revisionNr))
+				{
+					Node comment=new Node(revSol.getLiteral("revision_comment").getValue().toString());
+					otherNodes.add(comment);
+					revNumbers.get(revisionNr).addEdge(new Edge("comment", comment));
+					revNumbers.remove(revisionNr);
+				}
 			}
 		}
 		return docNode;
