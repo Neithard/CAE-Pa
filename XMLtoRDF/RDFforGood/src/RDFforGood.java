@@ -12,6 +12,8 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
+import com.hp.hpl.jena.ontology.OntClass;
+import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -37,6 +39,7 @@ public class RDFforGood {
 				
 				// Jena Model erstellen
 				model = ModelFactory.createDefaultModel();
+				OntModel ontmodel = ModelFactory.createOntologyModel();
 				
 				//************  Data Properties   ************
 				//Dokument
@@ -76,7 +79,11 @@ public class RDFforGood {
 				Property created = model.createProperty(namepsace, "created");
 				Property released = model.createProperty(namepsace, "released");
 				
-				
+				//Klassen erstellen
+				OntClass company_class = ontmodel.createClass(namepsace + "company");
+				OntClass dokument_class = ontmodel.createClass(namepsace + "dokument"); 
+				OntClass equipment_class = ontmodel.createClass(namepsace + "equipment"); 
+				OntClass revision_class = ontmodel.createClass(namepsace + "revision"); 
 				
 				// Konsollenüberschieft erstellt
 				System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
@@ -100,7 +107,7 @@ public class RDFforGood {
 								
 							//Jena Resource erstellen
 							//Property dokument_property = model.createProperty(namepsace, RuI.getAttribute("UID"));
-							Resource Dokument = model.createResource(namepsace + RuI.getAttribute("UID"));
+							Resource Dokument = model.createResource(namepsace + RuI.getAttribute("UID"),dokument_class);
 							
 							// UID hinzufügen
 							Dokument.addLiteral(uid, RuI.getAttribute("UID"));
@@ -152,7 +159,7 @@ public class RDFforGood {
 										Element eRevision = (Element) RevInfo.item(0);
 										
 										//Revisionsknoten erstellen --- die UID des ersten Revisionskonten wird als Revisions-UID genommen
-										Resource revision = model.createResource(namepsace + eRevision.getAttribute("UID"));
+										Resource revision = model.createResource(namepsace + eRevision.getAttribute("UID"), revision_class);
 										
 										// UID hinzufügen
 										revision.addLiteral(uid, eRevision.getAttribute("UID"));
@@ -235,7 +242,7 @@ public class RDFforGood {
 										Element eAtt = (Element) FirmInfo.item(0);
 										
 										//Firm Resource erstellen
-										Resource rFirm = model.createResource(namepsace + eAtt.getAttribute("UID"));
+										Resource rFirm = model.createResource(namepsace + eAtt.getAttribute("UID"), company_class);
 										
 										// UID hinzufügen
 										rFirm.addLiteral(uid, eAtt.getAttribute("UID"));
@@ -311,7 +318,7 @@ public class RDFforGood {
 				for(Geraet tmp_Geraet : geraete) {
 					
 					//Geräte Resource erzeugen
-					Resource rGeraetResource = model.createResource(namepsace + tmp_Geraet.getUid());
+					Resource rGeraetResource = model.createResource(namepsace + tmp_Geraet.getUid(), equipment_class);
 					
 					// UID hinzufügen
 					rGeraetResource.addLiteral(uid, tmp_Geraet.getUid());

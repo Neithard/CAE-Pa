@@ -1,4 +1,3 @@
-
 public class Geraet {
 	
 	private String uid;
