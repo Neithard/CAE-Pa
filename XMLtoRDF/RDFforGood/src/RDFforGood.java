@@ -338,23 +338,23 @@ public class RDFforGood {
 		            model.write( out, "RDF/XML" );
 
 		               out.close();
-		               System.out.println("Datei Abgelegt");
+		               System.out.println("Datei RDF/XML Abgelegt");
 		           }
 		         catch (Exception closeException) {
 		        	 System.out.println("Fehler");
 		         }
 		        
-		        fileName = "Turtle.ttf";
-		        try {
-		        	out = new FileWriter( fileName );
-		            model.write( out, "Turtle" );
-
-		               out.close();
-		               System.out.println("Datei Abgelegt");
-		           }
-		         catch (Exception closeException) {
-		        	 System.out.println("Fehler");
-		         }
+//		        fileName = "Turtle.ttf";
+//		        try {
+//		        	out = new FileWriter( fileName );
+//		            model.write( out, "Turtle" );
+//
+//		               out.close();
+//		               System.out.println("Datei Abgelegt");
+//		           }
+//		         catch (Exception closeException) {
+//		        	 System.out.println("Fehler");
+//		         }
 				
 	}
 		
@@ -378,7 +378,6 @@ public class RDFforGood {
 			dBuilder = dbFactory.newDocumentBuilder();
 			doc_temp = dBuilder.parse(fXmlFile);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
