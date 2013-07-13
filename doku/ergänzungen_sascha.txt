@@ -1,0 +1,54 @@
+#########an der stelle mit den node-Typen werden nur noch diese unterschieden:##############
+Person,
+Firma,
+leerer Knoten,
+Adresse,
+E-Mail,
+Telefonnummer,
+PDF,
+Revision,
+Gerät,
+Dokument,
+Andere
+
+Während der Planungsphase war vorgesehen, bei den Revisionsknoten, noch
+die aktuellste Revision hervorzuheben. Nun konnte aber tatsächlich immer nur eine Revision pro Dokument exportiert werden und außerdem hätte die Hervorhebung eine weitere Unterscheidung während der Transformation nötig
+gemacht. Dies kann im Bedarfsfall immer noch vorgenommen werden, ist aber im Moment aus Aufwandsgründen nicht realisiert worden.
+
+######################################################
+#######Implementierung der Transformation rdf2yEd####
+#####################################################
+Die Implementierung der Transformation erfolgte in Java, unter Nutzung der Jena-Bibliothek[Tobias sollte da in seiner Doku schon nen link haben]. Einen Überblick über den Aufbau der Anwendung gibt das Klassendiagramm in Abbilfung ABC.
+Hierbei wird durch RdfFileLoader eine SPARQL-Abfrage gemacht, welche die erforderlichen Werte aus dem RDF File liest und am das Ergebnis am Ende noch für eine GeräteUID filtert. Daraus werden dann Node- und Edge-Objekte erzeugt, mit einander verknüpft und schließlich nach den genannten Node-Typen sortiert.
+Anschließend erzeugt der XmlWriter eine für yEd optimierte GraphMl Datei daraus. Die Node Typen unterscheiden sich hauptsächlich in der Farbe, was gerade bei großen Strukturen zur Übersichtlichkeit in yEd beiträgt.
+Für einige Node Typen wurden Symbole in Form von SVG-Daten verwendet.
+Diese SVG-Daten sind als Strings in der Klasse XmlWriter abgelegt.
+Das fertige Dokument, kann dann mit yEd geöffnet werden. Das Ergebnis ist zunächst nicht sonderlich gut lesbar, siehe Grafik EFG
+Um den Graph zu betrachten sind zwei Aktionen sinnvoll:
+Hauptmenu: Werkzeuge->Knoten wie Beschriftung..->Häkchen bei Höhe/Breite ignorieren werg->OK (Dies führt zwa rauch dazu, dass die Grafiken bei den Nodes mit SVG Daten falsch angezeigt werden, aber der Rest ist besser lesbar).
+Layout-> (gewünschtes Layout auswählen, "organisch" funktrioniert gut)->Layout konfigurieren->OK
+Das Ergebnis zeigt Abbildung XXX.
+
+####################################################
+##########Validierung des GraphMl Formates##########
+####################################################
+Wie bereits erwähnt, ist das yEd-GraphMl zwar valide hinsichtlich der 
+Spezifikation, aber andere GraphMl Viewer können nicht besonders viel
+mit dem Format anfangen (umgekehrt gilt dies natürlich auch).
+Um aber dennoch zu prüfen, wie tauglich das generierte Format für
+andere Betrachte rist, wurde hier beispielhaft als Alternative Gephi[1]
+gewählt. Abbildung XYZ zeigt, wie das Programm den Graph aus Abbildung XXX
+darstellt. Wie man sieht, ist das GraphMl-Format erfogreich interpretiert worden, aber mal als Informationen über Knoten und Kanten (ungerichtet) sind daraus nicht ablesbar.
+[1]https://gephi.org/
+
+
+
+##################Falls tobias das vergisst############
+####Problematik mit der DateTime Angabe.#########
+Das bei den Revisionen exportierte Datum wird als Kommazahl ausgegeben.
+Recherchen haben ergeben, dass es sich hier um eine Datumsangabe im Format
+"OleAutomationDate" handelt.[1]
+Mit Hilfe einer von [2] importierten Klasse, wurde die Darstellung
+des Datums dann realisiert.
+[1]http://www.codeease.com/ole-automation-date.html
+[2]https://github.com/mt/oadate-java
