@@ -231,7 +231,7 @@ public class XmlWriter {
 		edgeNode.appendChild(key);
 		
 		Element label=doc.createElement("y:EdgeLabel");
-		Element arc=doc.createElement("y:ArcEdge");
+		Element arc=doc.createElement("y:BezierEdge");
 		key.appendChild(arc);
 		arc.appendChild(label);
 		label.setTextContent(e.getName());
