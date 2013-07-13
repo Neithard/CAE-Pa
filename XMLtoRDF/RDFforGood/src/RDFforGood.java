@@ -1,7 +1,8 @@
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.TimeZone;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -24,7 +25,10 @@ public class RDFforGood {
 	
 	private Document doc;
 	private Model model;
-	private ArrayList<Geraet> geraete = new ArrayList<Geraet>();
+	private ArrayList<Geraet> geraete = new ArrayList<Geraet>();	
+	
+	//Zeitzone
+	private TimeZone tz = TimeZone.getTimeZone("Europe/Berlin");
 	
 	public RDFforGood() {
 			
@@ -178,22 +182,22 @@ public class RDFforGood {
 											eRevision = (Element) RevInfo.item(k);
 											
 											if(eRevision.getAttribute("Beschreibung").contains("Erstellt von")){
-												Element eRevElementNextElement = (Element) RevInfo.item(k+1);
+												Element eRevElementNextElement = (Element) RevInfo.item(k+1);			
 												
 												// "Erstellt von" hinzufügen, was über einen leeren Knoten auf den Namen und das Datum zeigt
 												revision.addProperty(created, model.createResource().addLiteral(name, eRevision.getAttribute("Wert"))
-																									.addLiteral(date, eRevElementNextElement.getAttribute("Wert")));
+																									.addLiteral(date, OleAutomationDateUtil.fromOADate(eRevElementNextElement.getAttribute("Wert"), tz)));
 												
 												//Schleife das nächste Element überspringen lassen, da schon Ausgewertet
 												k++;
 											}
 											
 											if(eRevision.getAttribute("Beschreibung").contains("Geprüft von")){
-												Element eRevElementNextElement = (Element) RevInfo.item(k+1);
+												Element eRevElementNextElement = (Element) RevInfo.item(k+1);											
 												
 												// "Geprüft von" hinzufügen, was über einen leeren Knoten auf den Namen und das Datum zeigt
 												revision.addProperty(checked, model.createResource().addLiteral(name, eRevision.getAttribute("Wert"))
-																									.addLiteral(date, eRevElementNextElement.getAttribute("Wert")));
+																									.addLiteral(date, OleAutomationDateUtil.fromOADate(eRevElementNextElement.getAttribute("Wert"), tz)));
 												
 												//Schleife das nächste Element überspringen lassen, da schon Ausgewertet
 												k++;
@@ -204,14 +208,13 @@ public class RDFforGood {
 												
 												// "Freigegeben von" hinzufügen, was über einen leeren Knoten auf den Namen und das Datum zeigt
 												revision.addProperty(released, model.createResource().addLiteral(name, eRevision.getAttribute("Wert"))
-																									.addLiteral(date, eRevElementNextElement.getAttribute("Wert")));
+																									.addLiteral(date, OleAutomationDateUtil.fromOADate(eRevElementNextElement.getAttribute("Wert"), tz)));
 												
 												//Schleife das nächste Element überspringen lassen, da schon Ausgewertet
 												k++;
 											}
 											
 											if(eRevision.getAttribute("Beschreibung").contains("Revisionsbeschreibung")){
-												Element eRevElementNextElement = (Element) RevInfo.item(k+1);
 												
 												// Revisionskommentar hinzufügen
 												revision.addLiteral(revision_comment, eRevision.getAttribute("Wert"));
@@ -283,8 +286,8 @@ public class RDFforGood {
 										Element geraet = (Element) RuIElement.item(l);
 										
 										//Erzeuge Triple: Gerät -> has_dokument -> Dokument ... Resource Gerät wird erst später erstellt
-										Resource geraet_triple = model.createResource(namepsace + geraet.getAttribute("UID"));
-										geraet_triple.addProperty(has_dokument, Dokument);
+							  		    Resource geraet_triple = model.createResource(namepsace + geraet.getAttribute("UID"));
+
 										
 										//Geräte zum späteren hinzufügen zwischenspeichern
 										addGeraet(geraet.getAttribute("UID"), geraet.getAttribute("Name"), geraet.getAttribute("Beschreibung"));
@@ -388,6 +391,13 @@ public class RDFforGood {
 		// wenn nicht, dann Füge Geräte der Liste hinzu
 		geraete.add(new Geraet(UID, name, description));
 		
+	}
+	
+	public static final String OLEtoUTC(String OLE) {
+		Date UTC = new Date();
+		UTC.setTime((Integer.parseInt(OLE) - 25569) * 24 * 3600 * 1000);
+		
+		return UTC.toString();
 	}
 	
 }
