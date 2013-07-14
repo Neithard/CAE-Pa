@@ -21,7 +21,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileFilter;
 
-import transformation.XMLtoRDF;
+import transformation.Rdf2yed;
 
 public class Main_GUI {
 
@@ -29,24 +29,24 @@ public class Main_GUI {
 	private JPanel contentPane;
 	private JTextField label_pathfile;
 	
-	private String source_file;
-	private String destination_file;
+	private static String source_file;
+	private static String destination_file;
 	
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		
-		if(args.length>0){
-			String source_temp=args[0];
-			String destination_temp=args[1]; 
-			if(source_temp.contains("-")&&source_temp.contains(".xml")&&destination_temp.contains("-")&&destination_temp.contains(".rdf")) {
-				new XMLtoRDF(source_temp.substring(1, source_temp.length()), destination_temp.substring(1,destination_temp.length())).transformation();
-				System.out.println("transformation successful");
-			}	
-			
-		}
-		else {		
+//		
+//		if(args.length>0){
+//			String source_temp=args[0];
+//			String destination_temp=args[1]; 
+//			if(source_temp.contains("-")&&source_temp.contains(".xml")&&destination_temp.contains("-")&&destination_temp.contains(".rdf")) {
+//				new Rdf2yed().rdf2yed(source_file, destination_file, "A3AOUEE6WH");
+//				System.out.println("transformation successful");
+//			}	
+//			
+//		}
+	//	else {		
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
 					try {
@@ -57,7 +57,7 @@ public class Main_GUI {
 					}
 				}
 			});
-		}
+	//	}
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class Main_GUI {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		frame.setContentPane(contentPane);
 		
-		JLabel lblNewLabel = new JLabel("XMLtoRDF converter tool");
+		JLabel lblNewLabel = new JLabel("RDFtoyED converter tool");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
 		final JPanel panel = new JPanel();
@@ -108,10 +108,10 @@ public class Main_GUI {
 		);
 		panel.setLayout(null);
 		
-		final JLabel label_text = new JLabel("Step 1 of 3: Choose XML file");
-		label_text.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		label_text.setBounds(10, 11, 312, 14);
-		panel.add(label_text);
+		final JLabel lblStepOf = new JLabel("Step 1 of 3: Choose RDF file");
+		lblStepOf.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblStepOf.setBounds(10, 11, 312, 14);
+		panel.add(lblStepOf);
 		
 		JSeparator separator = new JSeparator();
 		separator.setForeground(Color.LIGHT_GRAY);
@@ -143,10 +143,10 @@ public class Main_GUI {
 			public void actionPerformed(ActionEvent e) {			
 				
 				if(label_file.getText().contains("Source")){
-					label_pathfile.setText(holePfad("xml"));
+					label_pathfile.setText(holePfad("rdf"));
 				}
 				else {
-					label_pathfile.setText(holePfad("rdf"));
+					label_pathfile.setText(holePfad("graphml"));
 				}
 				
 			}
@@ -158,9 +158,10 @@ public class Main_GUI {
 		btnconvert.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				XMLtoRDF trans = new XMLtoRDF(source_file, destination_file);
 				
-				if(!trans.transformation()){
+				Rdf2yed trans = new Rdf2yed();
+				
+				if(!trans.rdf2yed(source_file, destination_file, "A3AOUEE6WH")){
 					lblSuccessful.setText("transformation failed");
 					lblSuccessful.setBackground(Color.RED);
 				}
@@ -182,10 +183,11 @@ public class Main_GUI {
 				
 				if(label_file.getText().contains("Source")){
 					//Sicherungsabfrage
-					if(label_pathfile.getText().toLowerCase().contains(".xml")) {
-						source_file = label_pathfile.getText();
+					if(label_pathfile.getText().toLowerCase().contains(".rdf")) {
+						source_file = label_pathfile.getText().toLowerCase();
+						source_file.replace(" ", "\\ ");
 						label_file.setText("Destination file");
-						label_text.setText("Step 2 of 3: Choose destination file");
+						lblStepOf.setText("Step 2 of 3: Choose destination file");
 						label_pathfile.setText("");
 					}
 					else {
@@ -194,12 +196,13 @@ public class Main_GUI {
 				}
 				else if (label_file.getText().contains("Destination")) {
 					//Sicherungsabfrage
-					if( label_pathfile.getText().toLowerCase().contains(".rdf")) {
-						destination_file = label_pathfile.getText();
+					if( label_pathfile.getText().toLowerCase().contains(".graphml")) {
+						destination_file = label_pathfile.getText().toLowerCase();
+						destination_file.replace(" ", "\\ ");
 						label_pathfile.setVisible(false);
 						label_file.setVisible(false);
 						btnBrowse.setVisible(false);
-						label_text.setText("Step 3 of 3: Start transformation");
+						lblStepOf.setText("Step 3 of 3: Start transformation");
 						btnNext.setVisible(false);
 						btnconvert.setVisible(true);
 					}

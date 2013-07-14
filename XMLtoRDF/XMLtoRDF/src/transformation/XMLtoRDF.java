@@ -22,7 +22,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.RDFS;
 
 
-public class RDFforGood {
+public class XMLtoRDF {
 	
 	String namepsace = "http://tu-dresden.de/ifa/cae/";
 	
@@ -37,7 +37,7 @@ public class RDFforGood {
 	private String source_file;
 	private String destination_file;
 	
-	public RDFforGood(String source, String destination) {
+	public XMLtoRDF(String source, String destination) {
 		this.source_file = source;
 		this.destination_file = destination;
 	}
@@ -357,10 +357,7 @@ public class RDFforGood {
 		        	 return false;
 		         }
 				
-		        
-		        return true;
-		        
-//		        fileName = "Turtle.ttf";
+//		        String fileName = "Turtle.ttf";
 //		        try {
 //		        	out = new FileWriter( fileName );
 //		            model.write( out, "Turtle" );
@@ -371,6 +368,10 @@ public class RDFforGood {
 //		         catch (Exception closeException) {
 //		        	 System.out.println("Fehler");
 //		         }
+		        
+		        return true;
+		        
+		       
 				
 	}
 		
