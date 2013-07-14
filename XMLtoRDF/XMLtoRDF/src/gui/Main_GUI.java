@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
@@ -35,16 +36,28 @@ public class Main_GUI {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Main_GUI window = new Main_GUI();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
+		
+		if(args.length>0){
+			String source_temp=args[0];
+			String destination_temp=args[1]; 
+			if(source_temp.contains("-")&&source_temp.contains(".xml")&&destination_temp.contains("-")&&destination_temp.contains(".rdf")) {
+				new RDFforGood(source_temp.substring(1, source_temp.length()), destination_temp.substring(1,destination_temp.length())).transformation();
+				System.out.println("transformation successful");
+			}	
+			
+		}
+		else {		
+			EventQueue.invokeLater(new Runnable() {
+				public void run() {
+					try {
+						Main_GUI window = new Main_GUI();
+						window.frame.setVisible(true);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 
 	/**
@@ -70,7 +83,7 @@ public class Main_GUI {
 		JLabel lblNewLabel = new JLabel("XMLtoRDF converter tool");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		
-		JPanel panel = new JPanel();
+		final JPanel panel = new JPanel();
 		panel.setBackground(Color.WHITE);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
@@ -111,6 +124,15 @@ public class Main_GUI {
 		label_file.setBounds(10, 57, 83, 17);
 		panel.add(label_file);
 		
+		final JLabel lblSuccessful = new JLabel("transformation successful");
+		lblSuccessful.setForeground(Color.GREEN);
+		lblSuccessful.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblSuccessful.setBounds(37, 46, 299, 28);
+		panel.add(lblSuccessful);
+		lblSuccessful.setVisible(false);
+		
+		
+		
 		label_pathfile = new JTextField();
 		label_pathfile.setBounds(93, 55, 243, 20);
 		panel.add(label_pathfile);
@@ -138,11 +160,13 @@ public class Main_GUI {
 				
 				RDFforGood trans = new RDFforGood(source_file, destination_file);
 				
-				if(trans.transformation()){
-					btnconvert.setVisible(false);
+				if(!trans.transformation()){
+					lblSuccessful.setText("transformation failed");
+					lblSuccessful.setBackground(Color.RED);
 				}
-					
 				
+				btnconvert.setVisible(false);
+				lblSuccessful.setVisible(true);
 			}
 		});
 		btnconvert.setForeground(Color.DARK_GRAY);
@@ -158,16 +182,19 @@ public class Main_GUI {
 				
 				if(label_file.getText().contains("Source")){
 					//Sicherungsabfrage
-					if(label_pathfile.getText().contains(".xml")) {
+					if(true){//label_pathfile.getText().contains(".xml")) {
 						source_file = label_pathfile.getText();
 						label_file.setText("Destination file");
 						label_text.setText("Step 2 of 3: Choose destination file");
 						label_pathfile.setText("");
 					}
+					else {
+						JOptionPane.showMessageDialog(null, "Keine Datei ausgewählt" , "Error", JOptionPane.ERROR_MESSAGE);
+					}
 				}
 				else if (label_file.getText().contains("Destination")) {
 					//Sicherungsabfrage
-					if(label_pathfile.getText().contains(".rdf")) {
+					if(true) { //label_pathfile.getText().contains(".rdf")) {
 						destination_file = label_pathfile.getText();
 						label_pathfile.setVisible(false);
 						label_file.setVisible(false);
@@ -175,6 +202,9 @@ public class Main_GUI {
 						label_text.setText("Step 3 of 3: Start transformation");
 						btnNext.setVisible(false);
 						btnconvert.setVisible(true);
+					}
+					else {
+						JOptionPane.showMessageDialog(null, "Keine Datei ausgewählt" , "Error", JOptionPane.ERROR_MESSAGE);
 					}
 				}
 				
@@ -184,6 +214,9 @@ public class Main_GUI {
 
 		btnNext.setBounds(369, 99, 75, 23);
 		panel.add(btnNext);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setBounds(47, 36, 46, 14);
 		
 	}
 	
@@ -212,9 +245,6 @@ public class Main_GUI {
         if (state == JFileChooser.APPROVE_OPTION) {
             File file = fc.getSelectedFile();
             pfad = file.getAbsolutePath();
-        } else {
- 
-            System.exit(0);
         }
  
         return pfad;

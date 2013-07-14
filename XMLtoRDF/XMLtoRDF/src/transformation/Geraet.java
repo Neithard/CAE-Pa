@@ -1,5 +1,4 @@
 package transformation;
-
 public class Geraet {
 	
 	private String uid;
