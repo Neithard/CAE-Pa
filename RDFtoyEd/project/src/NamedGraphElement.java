@@ -1,10 +1,19 @@
 
 public class NamedGraphElement {
-	protected final String name;
+	protected  String name;
+	protected final int id;
+	public int getId() {
+		return id;
+	}
 
-	public NamedGraphElement(String name) {
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public NamedGraphElement(String name, int id) {
 		super();
 		this.name = name;
+		this.id=id;
 	}
 
 	public String getName() {

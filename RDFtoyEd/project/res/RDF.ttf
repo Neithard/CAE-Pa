@@ -1,0 +1,883 @@
+<http://tu-dresden.de/ifa/cae/A3AOUESQWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,638587963"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6384375"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,638587963"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUET2WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFYIWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Wärmeaustauscher"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGKKWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUEPWWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG26WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE42WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFT8WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFJKWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFZ0WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF51WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGRJWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOX4V0OL>
+        <http://tu-dresden.de/ifa/cae/typ>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG0WWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "C1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUFBLWH> , <http://tu-dresden.de/ifa/cae/A3AOUFXBWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGS1WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFXBWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFPSWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Behälter"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOWZAGOL>
+        <http://tu-dresden.de/ifa/cae/company_name>
+                "Siemens"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/email_adress>
+                "mail@siemens.de"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_address>
+                [ <http://tu-dresden.de/ifa/cae/firm_location>
+                          "Test"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/firm_street>
+                          "siemensstraße"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/firm_zip>
+                          "12345"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/telephone_number>
+                "321456"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFPSWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6391550926"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6390972222"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6391550926"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOXSBHOL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Rohrleitungsabschnitt"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "01"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOVG5Q7M> .
+
+<http://tu-dresden.de/ifa/cae/A3AOXST3OL>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Rohrleitungsabschnitt"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "01"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOVG5Q7M> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEF7WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF28WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGAYWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Beheizungsliste"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEPWWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGESWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "T001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUGCBWH> , <http://tu-dresden.de/ifa/cae/A3AOUE42WH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFOUWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "L001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUG4RWH> , <http://tu-dresden.de/ifa/cae/A3AOUFK5WH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGMAWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "T004"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUGKKWH> , <http://tu-dresden.de/ifa/cae/A3AOUG0OWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF2SWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF6FWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFR4WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEQ4WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Behälter mit gewölbten Böden, allg."^^<http://www.w3.org/2001/XMLSchema#string> , ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "B001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOVG5Q7M> , <http://tu-dresden.de/ifa/cae/A3AOUE74WH> , <http://tu-dresden.de/ifa/cae/A3AOUGCPWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEE6WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Kreiselpumpe"^^<http://www.w3.org/2001/XMLSchema#string> , ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "P001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUU4FWH> , <http://tu-dresden.de/ifa/cae/A3AOUEPOWH> , <http://tu-dresden.de/ifa/cae/A3AOUF70WH> , <http://tu-dresden.de/ifa/cae/A3AOX4V0OL> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGRJWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG05WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUEODWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE5DWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUF3IWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUU4FWH>
+        <http://tu-dresden.de/ifa/cae/has_firm>
+                <http://tu-dresden.de/ifa/cae/A3AOWZAGOL> ;
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUU4EWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "R&I A0 EN 10628"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEPQWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Oberflächen-WT, allg."^^<http://www.w3.org/2001/XMLSchema#string> , ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "E1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOVG5Q7M> , <http://tu-dresden.de/ifa/cae/A3AOUET2WH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGFJWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\AA\\A3AOUEODWH.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG0OWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFHUWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEY5WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6416666667"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6415162037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6416666667"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOXAUGOL>
+        <http://tu-dresden.de/ifa/cae/company_name>
+                "Siemens"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/email_adress>
+                "mail@siemens.de"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_address>
+                [ <http://tu-dresden.de/ifa/cae/firm_location>
+                          "Test"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/firm_street>
+                          "siemensstraße"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/firm_zip>
+                          "12345"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/telephone_number>
+                "321456"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE2KWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFCWWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Pumpe"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGAYWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUU4EWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\AA\\A3AOUU4FWH.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6291319445"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,5719328704"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6291319445"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEE3WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFCWWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6398611111"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6397569444"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6398611111"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGMVWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUG6OWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF3IWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGRBWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Stellenplan, Detail-Darstellung"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEPOWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUG26WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Pumpe"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF13WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE6XWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGCPWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUG89WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Behälter"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF2JWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFWUWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEC6WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOVG5R7M>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\AA\\A3AOVG5Q7M.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6829976852"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6779050926"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6829976852"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFZ0WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFWUWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG89WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6338194444"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6295949074"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6338194444"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOVG5Q7M>
+        <http://tu-dresden.de/ifa/cae/has_firm>
+                <http://tu-dresden.de/ifa/cae/A3AOXAUGOL> ;
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOVG5R7M> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "R&I A2 EN 10628"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGRBWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\AA\\A3AOUF3IWH.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOX500OL>
+        <http://tu-dresden.de/ifa/cae/typ>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUULPWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Rohrleitungsabschnitt"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "01"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUU4FWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG7VWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFLQWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUEY5WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG6XWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGMMWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFT8WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE74WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUESQWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Behälter"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEMJWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFJ6WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Liste dichtmachender Geräte"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE73WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "F001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUFJKWH> , <http://tu-dresden.de/ifa/cae/A3AOUF51WH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFYJWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUEC6WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Meldungs- und Grenzsignalliste"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE2BWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUEMJWH> , <http://tu-dresden.de/ifa/cae/A3AOUF28WH> , <http://tu-dresden.de/ifa/cae/A3AOUFYJWH> , <http://tu-dresden.de/ifa/cae/A3AOUFIPWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFYIWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6393518519"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6392476852"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6393518519"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEJRWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUFZCWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Pumpe"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGMMWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "C:\\Dokumente und Einstellungen\\prlt09\\Desktop\\A33J5VYQ0Q_c1.pdf"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFK5WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUF64WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEKNWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGS1WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUE3XWH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                "Kreiselpumpe"^^<http://www.w3.org/2001/XMLSchema#string> , ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "G1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUU4FWH> , <http://tu-dresden.de/ifa/cae/A3AOUE2KWH> , <http://tu-dresden.de/ifa/cae/A3AOUEJRWH> , <http://tu-dresden.de/ifa/cae/A3AOX500OL> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFJ6WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG4RWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUEE3WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFZCWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6396990741"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6394907407"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6396990741"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF64WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF70WH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUEF7WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Pumpe"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEV0WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "P002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUFLQWH> , <http://tu-dresden.de/ifa/cae/A3AOUF6FWH> , <http://tu-dresden.de/ifa/cae/A3AOUG6XWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFBLWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUE6XWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Datenblatt Behälter"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFHUWH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUEODWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUGFJWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Stellenplan, Detail-Darstellung"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUG6OWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUG7VWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "TS-Nummern-Liste"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUGCBWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUF13WH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "Geräteblatt"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFIPWH>
+        <http://tu-dresden.de/ifa/cae/has_revision>
+                <http://tu-dresden.de/ifa/cae/A3AOUF2SWH> ;
+        <http://tu-dresden.de/ifa/cae/job_number>
+                "5-2013"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/project_number>
+                "123457"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/typ>
+                "EMR-Stellenliste"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUF46WH>
+        <http://www.w3.org/2000/01/rdf-schema#comment>
+                ""^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "T002"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/has_dokument>
+                <http://tu-dresden.de/ifa/cae/A3AOUF2JWH> , <http://tu-dresden.de/ifa/cae/A3AOUEKNWH> .
+
+<http://tu-dresden.de/ifa/cae/A3AOUFR4WH>
+        <http://tu-dresden.de/ifa/cae/PDF>
+                "S:\\comosfile\\123457\\@NO@.CRp"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/checked>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,641412037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/created>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,6399537037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/released>
+                [ <http://tu-dresden.de/ifa/cae/date>
+                          "41464,641412037"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                  <http://tu-dresden.de/ifa/cae/name>
+                          "PRLT09"^^<http://www.w3.org/2001/XMLSchema#string>
+                ] ;
+        <http://tu-dresden.de/ifa/cae/revision_comment>
+                "Revision"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://tu-dresden.de/ifa/cae/revision_number>
+                "2"^^<http://www.w3.org/2001/XMLSchema#int> .

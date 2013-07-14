@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://tu-dresden.de/ifa/cae/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFLQWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEY5WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFLQWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6295949074</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE73WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE73WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFJKWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF51WH"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6291319445</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG6OWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG7VWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TS-Nummern-Liste</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG6OWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE6XWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE6XWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6416666667</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUULPWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rohrleitungsabschnitt</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUULPWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUU4FWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEV0WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P002</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEV0WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFLQWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF6FWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG6XWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF70WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEF7WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Pumpe</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF70WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE74WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUESQWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Behälter</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE74WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFIPWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF2SWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMR-Stellenliste</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFIPWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEC6WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEC6WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6396990741</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGRBWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\AA\A3AOUF3IWH.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGRBWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <j.0:firm_street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">siemensstraße</j.0:firm_street>
+    <j.0:firm_zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345</j.0:firm_zip>
+    <j.0:firm_location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test</j.0:firm_location>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6338194444</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEPQWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oberflächen-WT, allg.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E1</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEPQWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOVG5Q7M"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUET2WH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG0WWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG0WWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFBLWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFXBWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEE3WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEE3WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG0OWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFHUWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG0OWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG26WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG26WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGCPWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG89WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Behälter</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGCPWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6416666667</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGFJWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\AA\A3AOUEODWH.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGFJWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEY5WH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A6"/>
+    <j.0:checked rdf:nodeID="A2"/>
+    <j.0:created rdf:nodeID="A7"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEY5WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6392476852</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE2BWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE2BWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEMJWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF28WH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFYJWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFIPWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6338194444</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF2SWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF2SWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFK5WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF64WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFK5WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,5719328704</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF13WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF13WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFXBWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFPSWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Behälter</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFXBWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFHUWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFHUWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6393518519</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFBLWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUE6XWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Behälter</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFBLWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGS1WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGS1WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFOUWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFOUWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG4RWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFK5WH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEKNWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGS1WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEKNWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFJKWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFZ0WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFJKWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE5DWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE5DWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF3IWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6390972222</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEODWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGFJWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stellenplan, Detail-Darstellung</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEODWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6291319445</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF64WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF64WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6393518519</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF28WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGAYWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beheizungsliste</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF28WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEPWWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEPWWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOXSBHOL">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rohrleitungsabschnitt</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOXSBHOL</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOVG5Q7M"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOWZAGOL">
+    <j.0:telephone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">321456</j.0:telephone_number>
+    <j.0:has_address rdf:nodeID="A4"/>
+    <j.0:company_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Siemens</j.0:company_name>
+    <j.0:email_adress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mail@siemens.de</j.0:email_adress>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOWZAGOL</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6391550926</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFPSWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A16"/>
+    <j.0:checked rdf:nodeID="A15"/>
+    <j.0:created rdf:nodeID="A12"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFPSWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6399537037</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG4RWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEE3WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG4RWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6829976852</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOX4V0OL">
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOX4V0OL</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEE6WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kreiselpumpe</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEE6WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUU4FWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEPOWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF70WH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOX4V0OL"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,638587963</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6398611111</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE3XWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kreiselpumpe</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G1</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE3XWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUU4FWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUE2KWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEJRWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOX500OL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFCWWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A20"/>
+    <j.0:checked rdf:nodeID="A21"/>
+    <j.0:created rdf:nodeID="A22"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFCWWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6391550926</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG6XWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGMMWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG6XWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFT8WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFT8WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOX500OL">
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOX500OL</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEMJWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFJ6WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liste dichtmachender Geräte</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEMJWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <j.0:firm_street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">siemensstraße</j.0:firm_street>
+    <j.0:firm_zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345</j.0:firm_zip>
+    <j.0:firm_location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Test</j.0:firm_location>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFWUWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFWUWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,641412037</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGMMWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C:\Dokumente und Einstellungen\prlt09\Desktop\A33J5VYQ0Q_c1.pdf</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGMMWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF46WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T002</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF46WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF2JWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEKNWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6398611111</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG05WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG05WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEODWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEQ4WH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behälter mit gewölbten Böden, allg.</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEQ4WH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOVG5Q7M"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUE74WH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGCPWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOXST3OL">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rohrleitungsabschnitt</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOXST3OL</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOVG5Q7M"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6384375</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGESWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGESWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGCBWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUE42WH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGMAWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T004</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGMAWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGKKWH"/>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG0OWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGRJWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGRJWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE2KWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFCWWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Pumpe</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE2KWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6394907407</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOXAUGOL">
+    <j.0:telephone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">321456</j.0:telephone_number>
+    <j.0:has_address rdf:nodeID="A23"/>
+    <j.0:company_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Siemens</j.0:company_name>
+    <j.0:email_adress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mail@siemens.de</j.0:email_adress>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOXAUGOL</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6779050926</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,641412037</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF6FWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFR4WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF6FWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUET2WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFYIWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Wärmeaustauscher</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUET2WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUESQWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A29"/>
+    <j.0:checked rdf:nodeID="A19"/>
+    <j.0:created rdf:nodeID="A25"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUESQWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6397569444</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFYJWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEC6WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meldungs- und Grenzsignalliste</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFYJWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEPOWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG26WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Pumpe</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEPOWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFJ6WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFJ6WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFZCWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A3"/>
+    <j.0:checked rdf:nodeID="A30"/>
+    <j.0:created rdf:nodeID="A26"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFZCWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF3IWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGRBWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stellenplan, Detail-Darstellung</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF3IWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGMVWH">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</rdfs:label>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGMVWH</j.0:uid>
+    <j.0:has_dokument rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUG6OWH"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEF7WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEF7WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFZ0WH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFZ0WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUE42WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFT8WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUE42WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6396990741</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF51WH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUGRJWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF51WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGKKWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUEPWWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGKKWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUF2JWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFWUWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUF2JWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUEJRWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUFZCWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Datenblatt Pumpe</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUEJRWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6829976852</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFYIWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A11"/>
+    <j.0:checked rdf:nodeID="A14"/>
+    <j.0:created rdf:nodeID="A8"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFYIWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGAYWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGAYWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUGCBWH">
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUF13WH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geräteblatt</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUGCBWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,6415162037</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUU4EWH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A1"/>
+    <j.0:checked rdf:nodeID="A13"/>
+    <j.0:created rdf:nodeID="A10"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\AA\A3AOUU4FWH.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUU4EWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG89WH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A9"/>
+    <j.0:checked rdf:nodeID="A5"/>
+    <j.0:created rdf:nodeID="A0"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG89WH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUU4FWH">
+    <j.0:has_firm rdf:resource="http://tu-dresden.de/ifa/cae/A3AOWZAGOL"/>
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOUU4EWH"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R&amp;I A0 EN 10628</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUU4FWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <j.0:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41464,638587963</j.0:date>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PRLT09</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOVG5Q7M">
+    <j.0:has_firm rdf:resource="http://tu-dresden.de/ifa/cae/A3AOXAUGOL"/>
+    <j.0:has_revision rdf:resource="http://tu-dresden.de/ifa/cae/A3AOVG5R7M"/>
+    <j.0:project_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123457</j.0:project_number>
+    <j.0:job_number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-2013</j.0:job_number>
+    <j.0:typ rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R&amp;I A2 EN 10628</j.0:typ>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOVG5Q7M</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUG7VWH">
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUG7VWH</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOVG5R7M">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A18"/>
+    <j.0:checked rdf:nodeID="A31"/>
+    <j.0:created rdf:nodeID="A27"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\AA\A3AOVG5Q7M.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOVG5R7M</j.0:uid>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://tu-dresden.de/ifa/cae/A3AOUFR4WH">
+    <j.0:revision_comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revision</j.0:revision_comment>
+    <j.0:released rdf:nodeID="A28"/>
+    <j.0:checked rdf:nodeID="A24"/>
+    <j.0:created rdf:nodeID="A17"/>
+    <j.0:PDF rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S:\comosfile\123457\@NO@.CRp</j.0:PDF>
+    <j.0:revision_number rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:revision_number>
+    <j.0:uid rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A3AOUFR4WH</j.0:uid>
+  </rdf:Description>
+</rdf:RDF>
